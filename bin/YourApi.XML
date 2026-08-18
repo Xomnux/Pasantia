@@ -4,6 +4,7 @@
         <name>Pasantia</name>
     </assembly>
     <members>
+<<<<<<< HEAD
         <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.NivelAccion" -->
         <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.EtiquetaTexto" -->
         <!-- Badly formed XML comment ignored for member "P:PracticaDocFX.Facil.EtiquetaTexto.Texto" -->
@@ -12,6 +13,72 @@
         <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.Contador" -->
         <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.UtilidadesBasicas" -->
         <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.ColaSimple`1" -->
+=======
+        <member name="T:PracticaDocFX.Facil.NivelAccion">
+            <summary>
+            Enumera el nivel de accion
+            </summary>
+            <remark>
+            Cada nivel describe un grado de accion
+            </remark>
+        </member>
+        <member name="T:PracticaDocFX.Facil.EtiquetaTexto">
+            <summary>
+             establece que en la etiqueta del texto no puede ir espacio en blanco
+            </summary>
+            <remarks>
+            Cada texto no puede ser de valor nulo
+            </remarks>
+        </member>
+        <member name="P:PracticaDocFX.Facil.EtiquetaTexto.Texto">
+            <summary>
+             Obtiene el texto y el prefijo
+            </summary>
+            <remarks>
+             toma la disposicion del texto y el prefijo
+            </remarks>
+        </member>
+        <member name="M:PracticaDocFX.Facil.EtiquetaTexto.#ctor(System.String,System.String)">
+            <summary>
+             Pide el texto y el prefijo
+            </summary>
+            <remarks>
+             pide y define el lugar del texto y prefijo
+            </remarks>
+        </member>
+        <member name="M:PracticaDocFX.Facil.EtiquetaTexto.ObtenerEtiqueta">
+            <summary>
+             obtiene las etiquetas
+            </summary>
+            <remarks>
+             Obtiene las etiquetas devolviendo prefijo y texto
+            </remarks>
+        </member>
+        <member name="T:PracticaDocFX.Facil.Contador">
+            <summary>
+             aumenta o disminuye el valor inicial de la variable
+            </summary>
+            <remarks>
+             puede tomar y aumentar o disminuir un valor 
+            </remarks>
+        </member>
+        <member name="T:PracticaDocFX.Facil.UtilidadesBasicas">
+            <summary>
+            Devuelve valores no deseados
+            </summary>
+            <remarks>
+            devuelve el valor en caso de que no sea par y Si el valor no es suficiente tira una variable nueva y envia una advertencia de cambio
+            </remarks>
+        </member>
+        <member name="T:PracticaDocFX.Facil.ColaSimple`1">
+            <summary>
+            enfila y desenfila los valores
+            </summary>
+            <remarks>
+            Pone en cola (fila) las variables y tambien las desencola, en caso de que no haya un valor, se envia un mensaje
+            </remarks>
+        </member>
+>>>>>>> 375cdf57ef2e58e8d813aef01d82f4789a236de1
         <member name="T:PracticaDocFX.Intermedio.ErrorValidacion">
             convierte espacios como el codigo, mensaje y campo en algo visible y obliga a llenar los espacios
         </member>
