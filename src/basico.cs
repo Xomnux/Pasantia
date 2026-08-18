@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 
 /// <summary>
-/// Espacio de nombres de la practica
-/// 
-/// <summary>
+/// This class performs arithmetic operations.
+/// </summary>
 namespace PracticaDocFX.Facil
 {
     /// <summary>
