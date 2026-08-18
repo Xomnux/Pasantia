@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\bin\Debug\net10.0\Pasantia.exe
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\bin\Debug\net10.0\Pasantia.deps.json
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\bin\Debug\net10.0\Pasantia.runtimeconfig.json
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\bin\Debug\net10.0\Pasantia.dll
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\bin\Debug\net10.0\Pasantia.pdb
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\obj\Debug\net10.0\Pasantia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\obj\Debug\net10.0\Pasantia.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\obj\Debug\net10.0\Pasantia.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\obj\Debug\net10.0\Pasantia.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\obj\Debug\net10.0\Pasantia.sourcelink.json
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\obj\Debug\net10.0\Pasantia.dll
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\obj\Debug\net10.0\refint\Pasantia.dll
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\obj\Debug\net10.0\Pasantia.pdb
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\obj\Debug\net10.0\Pasantia.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Pasantia\Pasantia\obj\Debug\net10.0\ref\Pasantia.dll
