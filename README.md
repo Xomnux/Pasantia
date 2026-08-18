@@ -16,3 +16,7 @@ Se realizará comentarios de código de C# y se utilizarán las herramientas de 
     - git push
     - git pull
     - git log
+
+### Docuementacion
+    - XML: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags
+    - DocFX: https://dotnet.github.io/docfx/docs/markdown.html

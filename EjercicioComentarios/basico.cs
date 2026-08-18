@@ -1,15 +1,25 @@
 using System;
 using System.Collections.Generic;
 
+/// <summary>
+/// Espacio de nombres de la practica
+/// 
+/// <summary>
 namespace PracticaDocFX.Facil
 {
+    /// <summary>
+    /// Enumera el nivel de accion
+    /// <summary>
+    /// <remarks>
+    /// Cada nivel describe un grado de accion
+    /// </remarks>
     public enum NivelAccion
     {
         Suave = 0,
         Normal = 1,
         Fuerte = 2
     }
-
+/// establece que en la etiqueta del texto no puede ir espacio en blanco
     public sealed class EtiquetaTexto
     {
         public string Texto { get; }
@@ -68,7 +78,7 @@ namespace PracticaDocFX.Facil
         {
             return numero % 2 == 0;
         }
-
+///devuelve el valor en caso de que no sea el requerido
         public static int Limitar(int valor, int minimo, int maximo)
         {
             if (minimo > maximo)
@@ -78,7 +88,7 @@ namespace PracticaDocFX.Facil
             if (valor > maximo) return maximo;
             return valor;
         }
-
+///Si el valor no es suficiente tira una variable nueva y envia una advertencia de cambio
         public static int Suma(params int[] valores)
         {
             if (valores is null) throw new ArgumentNullException(nameof(valores));
@@ -93,7 +103,7 @@ namespace PracticaDocFX.Facil
             return (int)total;
         }
     }
-
+///Pone en cola (fila) las variables y tambien las desencola, en caso de que no haya un valor, se envia un mensaje
     public sealed class ColaSimple<T>
     {
         private readonly Queue<T> _cola = new Queue<T>();

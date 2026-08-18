@@ -10,7 +10,7 @@ namespace PracticaDocFX.Intermedio
         Pagado = 1,
         Cancelado = 2
     }
-
+///convierte espacios como el codigo, mensaje y campo en algo visible y obliga a llenar los espacios
     public sealed class ErrorValidacion
     {
         public string Codigo { get; }
@@ -57,7 +57,7 @@ namespace PracticaDocFX.Intermedio
     {
         ResultadoValidacion Validar(T valor);
     }
-
+///Evita que el espacio del campo este vacio
     public sealed class ValidadorNoNulo<T> : IValidador<T>
     {
         private readonly string _nombreCampo;
