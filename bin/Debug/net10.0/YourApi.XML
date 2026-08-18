@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Pasantia</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.NivelAccion" -->
+        <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.EtiquetaTexto" -->
+        <!-- Badly formed XML comment ignored for member "P:PracticaDocFX.Facil.EtiquetaTexto.Texto" -->
+        <!-- Badly formed XML comment ignored for member "M:PracticaDocFX.Facil.EtiquetaTexto.#ctor(System.String,System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:PracticaDocFX.Facil.EtiquetaTexto.ObtenerEtiqueta" -->
+        <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.Contador" -->
+        <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.UtilidadesBasicas" -->
+        <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.ColaSimple`1" -->
+        <member name="T:PracticaDocFX.Intermedio.ErrorValidacion">
+            convierte espacios como el codigo, mensaje y campo en algo visible y obliga a llenar los espacios
+        </member>
+        <member name="T:PracticaDocFX.Intermedio.ValidadorNoNulo`1">
+            Evita que el espacio del campo este vacio
+        </member>
+    </members>
+</doc>
