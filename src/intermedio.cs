@@ -4,19 +4,46 @@ using System.Linq;
 
 namespace PracticaDocFX.Intermedio
 {
+    /// <summary>
+    /// Su funcion es mostrar el estado del pedido del cliente
+    /// </summary>
+    /// <remarks>
+    /// usa elementos como Public para que sea visible para todos y Enum para crear la lista de funciones (Creado, pagado y cancelado) 
+    /// </remarks>
     public enum EstadoPedido
     {
         Creado = 0,
         Pagado = 1,
         Cancelado = 2
     }
+
 ///convierte espacios como el codigo, mensaje y campo en algo visible y obliga a llenar los espacios
+ 
+     /// <summary>
+    /// funciona como un sellador de clases
+    /// </summary>
+    /// <remarks>
+    /// la palabra Sealed (Sellado) sella la clase y evita que se pueda volver a usar 
+    /// </remarks>
     public sealed class ErrorValidacion
     {
+        /// <summary>
+        /// Estas 3 lineas registran el codigo, mensaje y campo
+        /// </summary>
+        /// <remarks>
+        /// Al resgistrar las cadenas, la funcion { get; } guarda la informacion para que no sea modificada
+        /// </remarks>
         public string Codigo { get; }
         public string Mensaje { get; }
         public string? Campo { get; }
 
+        /// <summary>
+        /// Evita que hayan espacios en blanco al recibir los enteros o las cadenas obligatorias
+        /// </summary>
+        /// <remarks>
+        /// Esta funcion hace que encaso de que haya informacion nula o incorrecta, el sistema envie un codigo de error para que sea corregido
+        /// Trim elimina espacios en blanco accidentales y string? hace que el parametro pueda estar lleno o nulo
+        /// </remarks>
         public ErrorValidacion(string codigo, string mensaje, string? campo = null)
         {
             if (string.IsNullOrWhiteSpace(codigo))
@@ -29,7 +56,12 @@ namespace PracticaDocFX.Intermedio
             Campo = campo?.Trim();
         }
     }
-
+        ///<summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
     public sealed class ResultadoValidacion
     {
         public IReadOnlyList<ErrorValidacion> Errores { get; }

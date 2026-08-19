@@ -4,6 +4,16 @@
         <name>Pasantia</name>
     </assembly>
     <members>
+<<<<<<< HEAD
+        <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.NivelAccion" -->
+        <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.EtiquetaTexto" -->
+        <!-- Badly formed XML comment ignored for member "P:PracticaDocFX.Facil.EtiquetaTexto.Texto" -->
+        <!-- Badly formed XML comment ignored for member "M:PracticaDocFX.Facil.EtiquetaTexto.#ctor(System.String,System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:PracticaDocFX.Facil.EtiquetaTexto.ObtenerEtiqueta" -->
+        <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.Contador" -->
+        <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.UtilidadesBasicas" -->
+        <!-- Badly formed XML comment ignored for member "T:PracticaDocFX.Facil.ColaSimple`1" -->
+=======
         <member name="T:PracticaDocFX.Facil.NivelAccion">
             <summary>
             Enumera el nivel de accion
@@ -140,6 +150,7 @@
             Pone en cola (fila) las variables y tambien las desencola, en caso de que no haya un valor, se envia un mensaje
             </remarks>
         </member>
+<<<<<<< HEAD
         <member name="F:PracticaDocFX.Facil.ColaSimple`1._cola">
             <summary>
             Crea una cola de numeros no sobreescribibles
@@ -172,6 +183,9 @@
              desencola con desencolar 
              </remarks>
         </member>
+=======
+>>>>>>> 375cdf57ef2e58e8d813aef01d82f4789a236de1
+>>>>>>> b5005e62c1436571964cb8e39d962611293f04f3
         <member name="T:PracticaDocFX.Intermedio.ErrorValidacion">
             convierte espacios como el codigo, mensaje y campo en algo visible y obliga a llenar los espacios
         </member>
