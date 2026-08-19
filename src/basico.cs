@@ -228,7 +228,12 @@ namespace PracticaDocFX.Facil
 
             return _cola.Dequeue();
         }
-
+        /// <summary>
+        /// Envia un mensaje si la cola esta vacia y si tiene regresa el primero
+        /// </summary>
+        /// <remarks>
+        /// usa comandos de excepcion y retorno
+        /// </remarks>
         public T VerPrimero()
         {
             if (_cola.Count == 0)
