@@ -1,0 +1,483 @@
+### YamlMime:ManagedReference
+items:
+- uid: PracticaDocFX.Intermedio.ValidadorRango
+  commentId: T:PracticaDocFX.Intermedio.ValidadorRango
+  id: ValidadorRango
+  parent: PracticaDocFX.Intermedio
+  children:
+  - PracticaDocFX.Intermedio.ValidadorRango.#ctor(System.Double,System.Double)
+  - PracticaDocFX.Intermedio.ValidadorRango.Maximo
+  - PracticaDocFX.Intermedio.ValidadorRango.Minimo
+  - PracticaDocFX.Intermedio.ValidadorRango.Validar(System.Double,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ValidadorRango
+  nameWithType: ValidadorRango
+  fullName: PracticaDocFX.Intermedio.ValidadorRango
+  type: Class
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: ValidadorRango
+    path: ../src/intermedio.cs
+    startLine: 200
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Establece un  rango minimo y maximo que no puede ser excedido, ademas establece que su espacio debe ser sin espacios en blanco
+  remarks: Establece valores como enteros dobles y exige que no se dejen en blanco
+  example: []
+  syntax:
+    content: public sealed class ValidadorRango
+    content.vb: Public NotInheritable Class ValidadorRango
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: PracticaDocFX.Intermedio.ValidadorRango.Minimo
+  commentId: P:PracticaDocFX.Intermedio.ValidadorRango.Minimo
+  id: Minimo
+  parent: PracticaDocFX.Intermedio.ValidadorRango
+  langs:
+  - csharp
+  - vb
+  name: Minimo
+  nameWithType: ValidadorRango.Minimo
+  fullName: PracticaDocFX.Intermedio.ValidadorRango.Minimo
+  type: Property
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Minimo
+    path: ../src/intermedio.cs
+    startLine: 208
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Permite al valor tener un maximo y minimo incluso en decimal
+  remarks: Usa el comando double para hacer uso de decimales en las variables Minimo y Maximo
+  example: []
+  syntax:
+    content: public double Minimo { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Minimo As Double
+  overload: PracticaDocFX.Intermedio.ValidadorRango.Minimo*
+- uid: PracticaDocFX.Intermedio.ValidadorRango.Maximo
+  commentId: P:PracticaDocFX.Intermedio.ValidadorRango.Maximo
+  id: Maximo
+  parent: PracticaDocFX.Intermedio.ValidadorRango
+  langs:
+  - csharp
+  - vb
+  name: Maximo
+  nameWithType: ValidadorRango.Maximo
+  fullName: PracticaDocFX.Intermedio.ValidadorRango.Maximo
+  type: Property
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Maximo
+    path: ../src/intermedio.cs
+    startLine: 209
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  syntax:
+    content: public double Maximo { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Maximo As Double
+  overload: PracticaDocFX.Intermedio.ValidadorRango.Maximo*
+- uid: PracticaDocFX.Intermedio.ValidadorRango.#ctor(System.Double,System.Double)
+  commentId: M:PracticaDocFX.Intermedio.ValidadorRango.#ctor(System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double)'
+  parent: PracticaDocFX.Intermedio.ValidadorRango
+  langs:
+  - csharp
+  - vb
+  name: ValidadorRango(double, double)
+  nameWithType: ValidadorRango.ValidadorRango(double, double)
+  fullName: PracticaDocFX.Intermedio.ValidadorRango.ValidadorRango(double, double)
+  type: Constructor
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: .ctor
+    path: ../src/intermedio.cs
+    startLine: 223
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Establece un  limite minimo para el valor de la variable Minimo
+  remarks: Evita que el valor Minimo sea mayor al maximo con excepciones y condicionales
+  example: []
+  syntax:
+    content: public ValidadorRango(double minimo, double maximo)
+    parameters:
+    - id: minimo
+      type: System.Double
+      description: Es el rango minimo posible que puede tener el valor, debe ser menor al maximo.
+    - id: maximo
+      type: System.Double
+      description: Es el rango maximo posible que puede tener el valor, debe ser mayor al minimo.
+    content.vb: Public Sub New(minimo As Double, maximo As Double)
+  overload: PracticaDocFX.Intermedio.ValidadorRango.#ctor*
+  nameWithType.vb: ValidadorRango.New(Double, Double)
+  fullName.vb: PracticaDocFX.Intermedio.ValidadorRango.New(Double, Double)
+  name.vb: New(Double, Double)
+- uid: PracticaDocFX.Intermedio.ValidadorRango.Validar(System.Double,System.String)
+  commentId: M:PracticaDocFX.Intermedio.ValidadorRango.Validar(System.Double,System.String)
+  id: Validar(System.Double,System.String)
+  parent: PracticaDocFX.Intermedio.ValidadorRango
+  langs:
+  - csharp
+  - vb
+  name: Validar(double, string)
+  nameWithType: ValidadorRango.Validar(double, string)
+  fullName: PracticaDocFX.Intermedio.ValidadorRango.Validar(double, string)
+  type: Method
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Validar
+    path: ../src/intermedio.cs
+    startLine: 243
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: >-
+    Evita que la cadena de campo sea un espacio en blanco
+
+    Evita que el valor Minimo y Maximo se salgan de su rango
+  remarks: >-
+    Usa una condicional y una excepcion para evitar espacios en blanco
+
+    En casode que los valores Minimo y Maximo excendan su limite, devolvera el valor y enviara un mensaje de correccion.
+  example: []
+  syntax:
+    content: public ResultadoValidacion Validar(double valor, string campo)
+    parameters:
+    - id: valor
+      type: System.Double
+      description: Doble que corresponde al valor
+    - id: campo
+      type: System.String
+      description: Cadena que corresponde al campo
+    return:
+      type: PracticaDocFX.Intermedio.ResultadoValidacion
+    content.vb: Public Function Validar(valor As Double, campo As String) As ResultadoValidacion
+  overload: PracticaDocFX.Intermedio.ValidadorRango.Validar*
+  nameWithType.vb: ValidadorRango.Validar(Double, String)
+  fullName.vb: PracticaDocFX.Intermedio.ValidadorRango.Validar(Double, String)
+  name.vb: Validar(Double, String)
+references:
+- uid: PracticaDocFX.Intermedio
+  commentId: N:PracticaDocFX.Intermedio
+  href: PracticaDocFX.html
+  name: PracticaDocFX.Intermedio
+  nameWithType: PracticaDocFX.Intermedio
+  fullName: PracticaDocFX.Intermedio
+  spec.csharp:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Intermedio
+    name: Intermedio
+    href: PracticaDocFX.Intermedio.html
+  spec.vb:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Intermedio
+    name: Intermedio
+    href: PracticaDocFX.Intermedio.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PracticaDocFX.Intermedio.ValidadorRango.Minimo*
+  commentId: Overload:PracticaDocFX.Intermedio.ValidadorRango.Minimo
+  href: PracticaDocFX.Intermedio.ValidadorRango.html#PracticaDocFX_Intermedio_ValidadorRango_Minimo
+  name: Minimo
+  nameWithType: ValidadorRango.Minimo
+  fullName: PracticaDocFX.Intermedio.ValidadorRango.Minimo
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: PracticaDocFX.Intermedio.ValidadorRango.Maximo*
+  commentId: Overload:PracticaDocFX.Intermedio.ValidadorRango.Maximo
+  href: PracticaDocFX.Intermedio.ValidadorRango.html#PracticaDocFX_Intermedio_ValidadorRango_Maximo
+  name: Maximo
+  nameWithType: ValidadorRango.Maximo
+  fullName: PracticaDocFX.Intermedio.ValidadorRango.Maximo
+- uid: PracticaDocFX.Intermedio.ValidadorRango.#ctor*
+  commentId: Overload:PracticaDocFX.Intermedio.ValidadorRango.#ctor
+  href: PracticaDocFX.Intermedio.ValidadorRango.html#PracticaDocFX_Intermedio_ValidadorRango__ctor_System_Double_System_Double_
+  name: ValidadorRango
+  nameWithType: ValidadorRango.ValidadorRango
+  fullName: PracticaDocFX.Intermedio.ValidadorRango.ValidadorRango
+  nameWithType.vb: ValidadorRango.New
+  fullName.vb: PracticaDocFX.Intermedio.ValidadorRango.New
+  name.vb: New
+- uid: PracticaDocFX.Intermedio.ValidadorRango.Validar*
+  commentId: Overload:PracticaDocFX.Intermedio.ValidadorRango.Validar
+  href: PracticaDocFX.Intermedio.ValidadorRango.html#PracticaDocFX_Intermedio_ValidadorRango_Validar_System_Double_System_String_
+  name: Validar
+  nameWithType: ValidadorRango.Validar
+  fullName: PracticaDocFX.Intermedio.ValidadorRango.Validar
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PracticaDocFX.Intermedio.ResultadoValidacion
+  commentId: T:PracticaDocFX.Intermedio.ResultadoValidacion
+  parent: PracticaDocFX.Intermedio
+  href: PracticaDocFX.Intermedio.ResultadoValidacion.html
+  name: ResultadoValidacion
+  nameWithType: ResultadoValidacion
+  fullName: PracticaDocFX.Intermedio.ResultadoValidacion

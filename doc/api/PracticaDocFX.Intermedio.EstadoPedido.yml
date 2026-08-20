@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: PracticaDocFX.Intermedio.EstadoPedido
+  commentId: T:PracticaDocFX.Intermedio.EstadoPedido
+  id: EstadoPedido
+  parent: PracticaDocFX.Intermedio
+  children:
+  - PracticaDocFX.Intermedio.EstadoPedido.Cancelado
+  - PracticaDocFX.Intermedio.EstadoPedido.Creado
+  - PracticaDocFX.Intermedio.EstadoPedido.Pagado
+  langs:
+  - csharp
+  - vb
+  name: EstadoPedido
+  nameWithType: EstadoPedido
+  fullName: PracticaDocFX.Intermedio.EstadoPedido
+  type: Enum
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: EstadoPedido
+    path: ../src/intermedio.cs
+    startLine: 12
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Su funcion es mostrar el estado del pedido del cliente
+  remarks: Usa elementos como Public para que sea visible para todos y Enum para crear la lista de funciones (Creado, pagado y cancelado)
+  example: []
+  syntax:
+    content: public enum EstadoPedido
+    content.vb: Public Enum EstadoPedido
+- uid: PracticaDocFX.Intermedio.EstadoPedido.Creado
+  commentId: F:PracticaDocFX.Intermedio.EstadoPedido.Creado
+  id: Creado
+  parent: PracticaDocFX.Intermedio.EstadoPedido
+  langs:
+  - csharp
+  - vb
+  name: Creado
+  nameWithType: EstadoPedido.Creado
+  fullName: PracticaDocFX.Intermedio.EstadoPedido.Creado
+  type: Field
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Creado
+    path: ../src/intermedio.cs
+    startLine: 14
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  syntax:
+    content: Creado = 0
+    return:
+      type: PracticaDocFX.Intermedio.EstadoPedido
+- uid: PracticaDocFX.Intermedio.EstadoPedido.Pagado
+  commentId: F:PracticaDocFX.Intermedio.EstadoPedido.Pagado
+  id: Pagado
+  parent: PracticaDocFX.Intermedio.EstadoPedido
+  langs:
+  - csharp
+  - vb
+  name: Pagado
+  nameWithType: EstadoPedido.Pagado
+  fullName: PracticaDocFX.Intermedio.EstadoPedido.Pagado
+  type: Field
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Pagado
+    path: ../src/intermedio.cs
+    startLine: 15
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  syntax:
+    content: Pagado = 1
+    return:
+      type: PracticaDocFX.Intermedio.EstadoPedido
+- uid: PracticaDocFX.Intermedio.EstadoPedido.Cancelado
+  commentId: F:PracticaDocFX.Intermedio.EstadoPedido.Cancelado
+  id: Cancelado
+  parent: PracticaDocFX.Intermedio.EstadoPedido
+  langs:
+  - csharp
+  - vb
+  name: Cancelado
+  nameWithType: EstadoPedido.Cancelado
+  fullName: PracticaDocFX.Intermedio.EstadoPedido.Cancelado
+  type: Field
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Cancelado
+    path: ../src/intermedio.cs
+    startLine: 16
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  syntax:
+    content: Cancelado = 2
+    return:
+      type: PracticaDocFX.Intermedio.EstadoPedido
+references:
+- uid: PracticaDocFX.Intermedio
+  commentId: N:PracticaDocFX.Intermedio
+  href: PracticaDocFX.html
+  name: PracticaDocFX.Intermedio
+  nameWithType: PracticaDocFX.Intermedio
+  fullName: PracticaDocFX.Intermedio
+  spec.csharp:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Intermedio
+    name: Intermedio
+    href: PracticaDocFX.Intermedio.html
+  spec.vb:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Intermedio
+    name: Intermedio
+    href: PracticaDocFX.Intermedio.html
+- uid: PracticaDocFX.Intermedio.EstadoPedido
+  commentId: T:PracticaDocFX.Intermedio.EstadoPedido
+  parent: PracticaDocFX.Intermedio
+  href: PracticaDocFX.Intermedio.EstadoPedido.html
+  name: EstadoPedido
+  nameWithType: EstadoPedido
+  fullName: PracticaDocFX.Intermedio.EstadoPedido

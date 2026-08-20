@@ -1,0 +1,798 @@
+### YamlMime:ManagedReference
+items:
+- uid: PracticaDocFX.Avanzado.Dinero
+  commentId: T:PracticaDocFX.Avanzado.Dinero
+  id: Dinero
+  parent: PracticaDocFX.Avanzado
+  children:
+  - PracticaDocFX.Avanzado.Dinero.#ctor(System.String,System.Decimal)
+  - PracticaDocFX.Avanzado.Dinero.Equals(PracticaDocFX.Avanzado.Dinero)
+  - PracticaDocFX.Avanzado.Dinero.Equals(System.Object)
+  - PracticaDocFX.Avanzado.Dinero.GetHashCode
+  - PracticaDocFX.Avanzado.Dinero.Moneda
+  - PracticaDocFX.Avanzado.Dinero.Monto
+  - PracticaDocFX.Avanzado.Dinero.Multiplicar(System.Decimal)
+  - PracticaDocFX.Avanzado.Dinero.Sumar(PracticaDocFX.Avanzado.Dinero)
+  - PracticaDocFX.Avanzado.Dinero.ToString
+  langs:
+  - csharp
+  - vb
+  name: Dinero
+  nameWithType: Dinero
+  fullName: PracticaDocFX.Avanzado.Dinero
+  type: Struct
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Dinero
+    path: ../src/avanzado.cs
+    startLine: 73
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: 'public readonly struct Dinero : IEquatable<Dinero>'
+    content.vb: Public Structure Dinero Implements IEquatable(Of Dinero)
+  implements:
+  - System.IEquatable{PracticaDocFX.Avanzado.Dinero}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: PracticaDocFX.Avanzado.Dinero.Moneda
+  commentId: P:PracticaDocFX.Avanzado.Dinero.Moneda
+  id: Moneda
+  parent: PracticaDocFX.Avanzado.Dinero
+  langs:
+  - csharp
+  - vb
+  name: Moneda
+  nameWithType: Dinero.Moneda
+  fullName: PracticaDocFX.Avanzado.Dinero.Moneda
+  type: Property
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Moneda
+    path: ../src/avanzado.cs
+    startLine: 75
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: public string Moneda { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Moneda As String
+  overload: PracticaDocFX.Avanzado.Dinero.Moneda*
+- uid: PracticaDocFX.Avanzado.Dinero.Monto
+  commentId: P:PracticaDocFX.Avanzado.Dinero.Monto
+  id: Monto
+  parent: PracticaDocFX.Avanzado.Dinero
+  langs:
+  - csharp
+  - vb
+  name: Monto
+  nameWithType: Dinero.Monto
+  fullName: PracticaDocFX.Avanzado.Dinero.Monto
+  type: Property
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Monto
+    path: ../src/avanzado.cs
+    startLine: 76
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: public decimal Monto { get; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public ReadOnly Property Monto As Decimal
+  overload: PracticaDocFX.Avanzado.Dinero.Monto*
+- uid: PracticaDocFX.Avanzado.Dinero.#ctor(System.String,System.Decimal)
+  commentId: M:PracticaDocFX.Avanzado.Dinero.#ctor(System.String,System.Decimal)
+  id: '#ctor(System.String,System.Decimal)'
+  parent: PracticaDocFX.Avanzado.Dinero
+  langs:
+  - csharp
+  - vb
+  name: Dinero(string, decimal)
+  nameWithType: Dinero.Dinero(string, decimal)
+  fullName: PracticaDocFX.Avanzado.Dinero.Dinero(string, decimal)
+  type: Constructor
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: .ctor
+    path: ../src/avanzado.cs
+    startLine: 78
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: public Dinero(string moneda, decimal monto)
+    parameters:
+    - id: moneda
+      type: System.String
+    - id: monto
+      type: System.Decimal
+    content.vb: Public Sub New(moneda As String, monto As Decimal)
+  overload: PracticaDocFX.Avanzado.Dinero.#ctor*
+  nameWithType.vb: Dinero.New(String, Decimal)
+  fullName.vb: PracticaDocFX.Avanzado.Dinero.New(String, Decimal)
+  name.vb: New(String, Decimal)
+- uid: PracticaDocFX.Avanzado.Dinero.Sumar(PracticaDocFX.Avanzado.Dinero)
+  commentId: M:PracticaDocFX.Avanzado.Dinero.Sumar(PracticaDocFX.Avanzado.Dinero)
+  id: Sumar(PracticaDocFX.Avanzado.Dinero)
+  parent: PracticaDocFX.Avanzado.Dinero
+  langs:
+  - csharp
+  - vb
+  name: Sumar(Dinero)
+  nameWithType: Dinero.Sumar(Dinero)
+  fullName: PracticaDocFX.Avanzado.Dinero.Sumar(PracticaDocFX.Avanzado.Dinero)
+  type: Method
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Sumar
+    path: ../src/avanzado.cs
+    startLine: 88
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: public Dinero Sumar(Dinero otro)
+    parameters:
+    - id: otro
+      type: PracticaDocFX.Avanzado.Dinero
+    return:
+      type: PracticaDocFX.Avanzado.Dinero
+    content.vb: Public Function Sumar(otro As Dinero) As Dinero
+  overload: PracticaDocFX.Avanzado.Dinero.Sumar*
+- uid: PracticaDocFX.Avanzado.Dinero.Multiplicar(System.Decimal)
+  commentId: M:PracticaDocFX.Avanzado.Dinero.Multiplicar(System.Decimal)
+  id: Multiplicar(System.Decimal)
+  parent: PracticaDocFX.Avanzado.Dinero
+  langs:
+  - csharp
+  - vb
+  name: Multiplicar(decimal)
+  nameWithType: Dinero.Multiplicar(decimal)
+  fullName: PracticaDocFX.Avanzado.Dinero.Multiplicar(decimal)
+  type: Method
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Multiplicar
+    path: ../src/avanzado.cs
+    startLine: 94
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: public Dinero Multiplicar(decimal factor)
+    parameters:
+    - id: factor
+      type: System.Decimal
+    return:
+      type: PracticaDocFX.Avanzado.Dinero
+    content.vb: Public Function Multiplicar(factor As Decimal) As Dinero
+  overload: PracticaDocFX.Avanzado.Dinero.Multiplicar*
+  nameWithType.vb: Dinero.Multiplicar(Decimal)
+  fullName.vb: PracticaDocFX.Avanzado.Dinero.Multiplicar(Decimal)
+  name.vb: Multiplicar(Decimal)
+- uid: PracticaDocFX.Avanzado.Dinero.ToString
+  commentId: M:PracticaDocFX.Avanzado.Dinero.ToString
+  id: ToString
+  parent: PracticaDocFX.Avanzado.Dinero
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Dinero.ToString()
+  fullName: PracticaDocFX.Avanzado.Dinero.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: ToString
+    path: ../src/avanzado.cs
+    startLine: 105
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: PracticaDocFX.Avanzado.Dinero.ToString*
+- uid: PracticaDocFX.Avanzado.Dinero.Equals(PracticaDocFX.Avanzado.Dinero)
+  commentId: M:PracticaDocFX.Avanzado.Dinero.Equals(PracticaDocFX.Avanzado.Dinero)
+  id: Equals(PracticaDocFX.Avanzado.Dinero)
+  parent: PracticaDocFX.Avanzado.Dinero
+  langs:
+  - csharp
+  - vb
+  name: Equals(Dinero)
+  nameWithType: Dinero.Equals(Dinero)
+  fullName: PracticaDocFX.Avanzado.Dinero.Equals(PracticaDocFX.Avanzado.Dinero)
+  type: Method
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Equals
+    path: ../src/avanzado.cs
+    startLine: 107
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Dinero other)
+    parameters:
+    - id: other
+      type: PracticaDocFX.Avanzado.Dinero
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Dinero) As Boolean
+  overload: PracticaDocFX.Avanzado.Dinero.Equals*
+  implements:
+  - System.IEquatable{PracticaDocFX.Avanzado.Dinero}.Equals(PracticaDocFX.Avanzado.Dinero)
+- uid: PracticaDocFX.Avanzado.Dinero.Equals(System.Object)
+  commentId: M:PracticaDocFX.Avanzado.Dinero.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: PracticaDocFX.Avanzado.Dinero
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Dinero.Equals(object?)
+  fullName: PracticaDocFX.Avanzado.Dinero.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Equals
+    path: ../src/avanzado.cs
+    startLine: 108
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: PracticaDocFX.Avanzado.Dinero.Equals*
+  nameWithType.vb: Dinero.Equals(Object)
+  fullName.vb: PracticaDocFX.Avanzado.Dinero.Equals(Object)
+  name.vb: Equals(Object)
+- uid: PracticaDocFX.Avanzado.Dinero.GetHashCode
+  commentId: M:PracticaDocFX.Avanzado.Dinero.GetHashCode
+  id: GetHashCode
+  parent: PracticaDocFX.Avanzado.Dinero
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Dinero.GetHashCode()
+  fullName: PracticaDocFX.Avanzado.Dinero.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: GetHashCode
+    path: ../src/avanzado.cs
+    startLine: 109
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: PracticaDocFX.Avanzado.Dinero.GetHashCode*
+references:
+- uid: PracticaDocFX.Avanzado
+  commentId: N:PracticaDocFX.Avanzado
+  href: PracticaDocFX.html
+  name: PracticaDocFX.Avanzado
+  nameWithType: PracticaDocFX.Avanzado
+  fullName: PracticaDocFX.Avanzado
+  spec.csharp:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Avanzado
+    name: Avanzado
+    href: PracticaDocFX.Avanzado.html
+  spec.vb:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Avanzado
+    name: Avanzado
+    href: PracticaDocFX.Avanzado.html
+- uid: System.IEquatable{PracticaDocFX.Avanzado.Dinero}
+  commentId: T:System.IEquatable{PracticaDocFX.Avanzado.Dinero}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Dinero>
+  nameWithType: IEquatable<Dinero>
+  fullName: System.IEquatable<PracticaDocFX.Avanzado.Dinero>
+  nameWithType.vb: IEquatable(Of Dinero)
+  fullName.vb: System.IEquatable(Of PracticaDocFX.Avanzado.Dinero)
+  name.vb: IEquatable(Of Dinero)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: PracticaDocFX.Avanzado.Dinero
+    name: Dinero
+    href: PracticaDocFX.Avanzado.Dinero.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PracticaDocFX.Avanzado.Dinero
+    name: Dinero
+    href: PracticaDocFX.Avanzado.Dinero.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PracticaDocFX.Avanzado.Dinero.Moneda*
+  commentId: Overload:PracticaDocFX.Avanzado.Dinero.Moneda
+  href: PracticaDocFX.Avanzado.Dinero.html#PracticaDocFX_Avanzado_Dinero_Moneda
+  name: Moneda
+  nameWithType: Dinero.Moneda
+  fullName: PracticaDocFX.Avanzado.Dinero.Moneda
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PracticaDocFX.Avanzado.Dinero.Monto*
+  commentId: Overload:PracticaDocFX.Avanzado.Dinero.Monto
+  href: PracticaDocFX.Avanzado.Dinero.html#PracticaDocFX_Avanzado_Dinero_Monto
+  name: Monto
+  nameWithType: Dinero.Monto
+  fullName: PracticaDocFX.Avanzado.Dinero.Monto
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: PracticaDocFX.Avanzado.Dinero.#ctor*
+  commentId: Overload:PracticaDocFX.Avanzado.Dinero.#ctor
+  href: PracticaDocFX.Avanzado.Dinero.html#PracticaDocFX_Avanzado_Dinero__ctor_System_String_System_Decimal_
+  name: Dinero
+  nameWithType: Dinero.Dinero
+  fullName: PracticaDocFX.Avanzado.Dinero.Dinero
+  nameWithType.vb: Dinero.New
+  fullName.vb: PracticaDocFX.Avanzado.Dinero.New
+  name.vb: New
+- uid: PracticaDocFX.Avanzado.Dinero.Sumar*
+  commentId: Overload:PracticaDocFX.Avanzado.Dinero.Sumar
+  href: PracticaDocFX.Avanzado.Dinero.html#PracticaDocFX_Avanzado_Dinero_Sumar_PracticaDocFX_Avanzado_Dinero_
+  name: Sumar
+  nameWithType: Dinero.Sumar
+  fullName: PracticaDocFX.Avanzado.Dinero.Sumar
+- uid: PracticaDocFX.Avanzado.Dinero
+  commentId: T:PracticaDocFX.Avanzado.Dinero
+  parent: PracticaDocFX.Avanzado
+  href: PracticaDocFX.Avanzado.Dinero.html
+  name: Dinero
+  nameWithType: Dinero
+  fullName: PracticaDocFX.Avanzado.Dinero
+- uid: PracticaDocFX.Avanzado.Dinero.Multiplicar*
+  commentId: Overload:PracticaDocFX.Avanzado.Dinero.Multiplicar
+  href: PracticaDocFX.Avanzado.Dinero.html#PracticaDocFX_Avanzado_Dinero_Multiplicar_System_Decimal_
+  name: Multiplicar
+  nameWithType: Dinero.Multiplicar
+  fullName: PracticaDocFX.Avanzado.Dinero.Multiplicar
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: PracticaDocFX.Avanzado.Dinero.ToString*
+  commentId: Overload:PracticaDocFX.Avanzado.Dinero.ToString
+  href: PracticaDocFX.Avanzado.Dinero.html#PracticaDocFX_Avanzado_Dinero_ToString
+  name: ToString
+  nameWithType: Dinero.ToString
+  fullName: PracticaDocFX.Avanzado.Dinero.ToString
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: PracticaDocFX.Avanzado.Dinero.Equals*
+  commentId: Overload:PracticaDocFX.Avanzado.Dinero.Equals
+  href: PracticaDocFX.Avanzado.Dinero.html#PracticaDocFX_Avanzado_Dinero_Equals_PracticaDocFX_Avanzado_Dinero_
+  name: Equals
+  nameWithType: Dinero.Equals
+  fullName: PracticaDocFX.Avanzado.Dinero.Equals
+- uid: System.IEquatable{PracticaDocFX.Avanzado.Dinero}.Equals(PracticaDocFX.Avanzado.Dinero)
+  commentId: M:System.IEquatable{PracticaDocFX.Avanzado.Dinero}.Equals(PracticaDocFX.Avanzado.Dinero)
+  parent: System.IEquatable{PracticaDocFX.Avanzado.Dinero}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Dinero)
+  nameWithType: IEquatable<Dinero>.Equals(Dinero)
+  fullName: System.IEquatable<PracticaDocFX.Avanzado.Dinero>.Equals(PracticaDocFX.Avanzado.Dinero)
+  nameWithType.vb: IEquatable(Of Dinero).Equals(Dinero)
+  fullName.vb: System.IEquatable(Of PracticaDocFX.Avanzado.Dinero).Equals(PracticaDocFX.Avanzado.Dinero)
+  spec.csharp:
+  - uid: System.IEquatable{PracticaDocFX.Avanzado.Dinero}.Equals(PracticaDocFX.Avanzado.Dinero)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: PracticaDocFX.Avanzado.Dinero
+    name: Dinero
+    href: PracticaDocFX.Avanzado.Dinero.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{PracticaDocFX.Avanzado.Dinero}.Equals(PracticaDocFX.Avanzado.Dinero)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: PracticaDocFX.Avanzado.Dinero
+    name: Dinero
+    href: PracticaDocFX.Avanzado.Dinero.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: PracticaDocFX.Avanzado.Dinero.GetHashCode*
+  commentId: Overload:PracticaDocFX.Avanzado.Dinero.GetHashCode
+  href: PracticaDocFX.Avanzado.Dinero.html#PracticaDocFX_Avanzado_Dinero_GetHashCode
+  name: GetHashCode
+  nameWithType: Dinero.GetHashCode
+  fullName: PracticaDocFX.Avanzado.Dinero.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

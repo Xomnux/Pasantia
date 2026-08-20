@@ -1,0 +1,34 @@
+{
+    "metadata": [
+        {
+            "src": [
+                {
+                    "src": "../",
+                    "files": [
+                        "Pasantia.csproj"
+                    ]
+                }
+            ],
+            "dest": "api"
+        }
+    ],
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "api/**/*.yml",
+                    "*.md",
+                    "toc.yml"
+                ]
+            }
+        ],
+        "dest": "_site",
+        "globalMetadata": {
+            "_appTitle": "My API Documentation",
+            "_appName": "My API"
+        },
+        "template": [
+            "modern"
+        ]
+    }
+}

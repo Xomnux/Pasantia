@@ -1,0 +1,107 @@
+### YamlMime:ManagedReference
+items:
+- uid: PracticaDocFX.Avanzado.IProveedorHora
+  commentId: T:PracticaDocFX.Avanzado.IProveedorHora
+  id: IProveedorHora
+  parent: PracticaDocFX.Avanzado
+  children:
+  - PracticaDocFX.Avanzado.IProveedorHora.AhoraUtc
+  langs:
+  - csharp
+  - vb
+  name: IProveedorHora
+  nameWithType: IProveedorHora
+  fullName: PracticaDocFX.Avanzado.IProveedorHora
+  type: Interface
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: IProveedorHora
+    path: ../src/avanzado.cs
+    startLine: 302
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: public interface IProveedorHora
+    content.vb: Public Interface IProveedorHora
+  derivedClasses:
+  - PracticaDocFX.Avanzado.HoraSistema
+- uid: PracticaDocFX.Avanzado.IProveedorHora.AhoraUtc
+  commentId: P:PracticaDocFX.Avanzado.IProveedorHora.AhoraUtc
+  id: AhoraUtc
+  parent: PracticaDocFX.Avanzado.IProveedorHora
+  langs:
+  - csharp
+  - vb
+  name: AhoraUtc
+  nameWithType: IProveedorHora.AhoraUtc
+  fullName: PracticaDocFX.Avanzado.IProveedorHora.AhoraUtc
+  type: Property
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: AhoraUtc
+    path: ../src/avanzado.cs
+    startLine: 304
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: DateTime AhoraUtc { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: ReadOnly Property AhoraUtc As Date
+  overload: PracticaDocFX.Avanzado.IProveedorHora.AhoraUtc*
+references:
+- uid: PracticaDocFX.Avanzado
+  commentId: N:PracticaDocFX.Avanzado
+  href: PracticaDocFX.html
+  name: PracticaDocFX.Avanzado
+  nameWithType: PracticaDocFX.Avanzado
+  fullName: PracticaDocFX.Avanzado
+  spec.csharp:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Avanzado
+    name: Avanzado
+    href: PracticaDocFX.Avanzado.html
+  spec.vb:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Avanzado
+    name: Avanzado
+    href: PracticaDocFX.Avanzado.html
+- uid: PracticaDocFX.Avanzado.IProveedorHora.AhoraUtc*
+  commentId: Overload:PracticaDocFX.Avanzado.IProveedorHora.AhoraUtc
+  href: PracticaDocFX.Avanzado.IProveedorHora.html#PracticaDocFX_Avanzado_IProveedorHora_AhoraUtc
+  name: AhoraUtc
+  nameWithType: IProveedorHora.AhoraUtc
+  fullName: PracticaDocFX.Avanzado.IProveedorHora.AhoraUtc
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,893 @@
+### YamlMime:ManagedReference
+items:
+- uid: PracticaDocFX.Intermedio.Pedido
+  commentId: T:PracticaDocFX.Intermedio.Pedido
+  id: Pedido
+  parent: PracticaDocFX.Intermedio
+  children:
+  - PracticaDocFX.Intermedio.Pedido.#ctor(System.String,System.String,System.DateTime)
+  - PracticaDocFX.Intermedio.Pedido.AgregarLinea(PracticaDocFX.Intermedio.LineaPedido)
+  - PracticaDocFX.Intermedio.Pedido.Cancelar
+  - PracticaDocFX.Intermedio.Pedido.ClienteId
+  - PracticaDocFX.Intermedio.Pedido.Estado
+  - PracticaDocFX.Intermedio.Pedido.FechaCreacionUtc
+  - PracticaDocFX.Intermedio.Pedido.FechaPagoUtc
+  - PracticaDocFX.Intermedio.Pedido.Id
+  - PracticaDocFX.Intermedio.Pedido.Lineas
+  - PracticaDocFX.Intermedio.Pedido.MarcarPagado
+  - PracticaDocFX.Intermedio.Pedido.Total
+  langs:
+  - csharp
+  - vb
+  name: Pedido
+  nameWithType: Pedido
+  fullName: PracticaDocFX.Intermedio.Pedido
+  type: Class
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Pedido
+    path: ../src/intermedio.cs
+    startLine: 427
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Publica y sella la clase Pedido
+  remarks: Usa public y sealed para sellar la clase
+  example: []
+  syntax:
+    content: public sealed class Pedido
+    content.vb: Public NotInheritable Class Pedido
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: PracticaDocFX.Intermedio.Pedido.Id
+  commentId: P:PracticaDocFX.Intermedio.Pedido.Id
+  id: Id
+  parent: PracticaDocFX.Intermedio.Pedido
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Pedido.Id
+  fullName: PracticaDocFX.Intermedio.Pedido.Id
+  type: Property
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Id
+    path: ../src/intermedio.cs
+    startLine: 443
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Hace que las propiedades Id y ClienteId tengan un valor obtenible
+  remarks: Usa propiedades de cadena y get; para la obtencion y visualizacion de valores
+  example: []
+  syntax:
+    content: public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Id As String
+  overload: PracticaDocFX.Intermedio.Pedido.Id*
+- uid: PracticaDocFX.Intermedio.Pedido.ClienteId
+  commentId: P:PracticaDocFX.Intermedio.Pedido.ClienteId
+  id: ClienteId
+  parent: PracticaDocFX.Intermedio.Pedido
+  langs:
+  - csharp
+  - vb
+  name: ClienteId
+  nameWithType: Pedido.ClienteId
+  fullName: PracticaDocFX.Intermedio.Pedido.ClienteId
+  type: Property
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: ClienteId
+    path: ../src/intermedio.cs
+    startLine: 444
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  syntax:
+    content: public string ClienteId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ClienteId As String
+  overload: PracticaDocFX.Intermedio.Pedido.ClienteId*
+- uid: PracticaDocFX.Intermedio.Pedido.Estado
+  commentId: P:PracticaDocFX.Intermedio.Pedido.Estado
+  id: Estado
+  parent: PracticaDocFX.Intermedio.Pedido
+  langs:
+  - csharp
+  - vb
+  name: Estado
+  nameWithType: Pedido.Estado
+  fullName: PracticaDocFX.Intermedio.Pedido.Estado
+  type: Property
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Estado
+    path: ../src/intermedio.cs
+    startLine: 452
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Publica la propiedad EstadoPedido y hace que solo pueda ser definida dentro de la clase
+  remarks: Publica la propiedad y la hace definible bajo una regla
+  example: []
+  syntax:
+    content: public EstadoPedido Estado { get; }
+    parameters: []
+    return:
+      type: PracticaDocFX.Intermedio.EstadoPedido
+    content.vb: Public Property Estado As EstadoPedido
+  overload: PracticaDocFX.Intermedio.Pedido.Estado*
+- uid: PracticaDocFX.Intermedio.Pedido.Lineas
+  commentId: P:PracticaDocFX.Intermedio.Pedido.Lineas
+  id: Lineas
+  parent: PracticaDocFX.Intermedio.Pedido
+  langs:
+  - csharp
+  - vb
+  name: Lineas
+  nameWithType: Pedido.Lineas
+  fullName: PracticaDocFX.Intermedio.Pedido.Lineas
+  type: Property
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Lineas
+    path: ../src/intermedio.cs
+    startLine: 460
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Hace que LineaPedido solo se pueda leer
+  remarks: Hace que la propiedad no sea editable
+  example: []
+  syntax:
+    content: public IReadOnlyList<LineaPedido> Lineas { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{PracticaDocFX.Intermedio.LineaPedido}
+    content.vb: Public ReadOnly Property Lineas As IReadOnlyList(Of LineaPedido)
+  overload: PracticaDocFX.Intermedio.Pedido.Lineas*
+- uid: PracticaDocFX.Intermedio.Pedido.FechaCreacionUtc
+  commentId: P:PracticaDocFX.Intermedio.Pedido.FechaCreacionUtc
+  id: FechaCreacionUtc
+  parent: PracticaDocFX.Intermedio.Pedido
+  langs:
+  - csharp
+  - vb
+  name: FechaCreacionUtc
+  nameWithType: Pedido.FechaCreacionUtc
+  fullName: PracticaDocFX.Intermedio.Pedido.FechaCreacionUtc
+  type: Property
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: FechaCreacionUtc
+    path: ../src/intermedio.cs
+    startLine: 468
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Registra la Fecha de Creacion
+  remarks: Hace que una fecha de creacion sea obtenible y guardada
+  example: []
+  syntax:
+    content: public DateTime FechaCreacionUtc { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public ReadOnly Property FechaCreacionUtc As Date
+  overload: PracticaDocFX.Intermedio.Pedido.FechaCreacionUtc*
+- uid: PracticaDocFX.Intermedio.Pedido.FechaPagoUtc
+  commentId: P:PracticaDocFX.Intermedio.Pedido.FechaPagoUtc
+  id: FechaPagoUtc
+  parent: PracticaDocFX.Intermedio.Pedido
+  langs:
+  - csharp
+  - vb
+  name: FechaPagoUtc
+  nameWithType: Pedido.FechaPagoUtc
+  fullName: PracticaDocFX.Intermedio.Pedido.FechaPagoUtc
+  type: Property
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: FechaPagoUtc
+    path: ../src/intermedio.cs
+    startLine: 475
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Registra la fecha de pago
+  remarks: Hace que la fecha de pago se pueda obtener y sea definida solo dentro de su clase
+  example: []
+  syntax:
+    content: public DateTime? FechaPagoUtc { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property FechaPagoUtc As Date?
+  overload: PracticaDocFX.Intermedio.Pedido.FechaPagoUtc*
+- uid: PracticaDocFX.Intermedio.Pedido.#ctor(System.String,System.String,System.DateTime)
+  commentId: M:PracticaDocFX.Intermedio.Pedido.#ctor(System.String,System.String,System.DateTime)
+  id: '#ctor(System.String,System.String,System.DateTime)'
+  parent: PracticaDocFX.Intermedio.Pedido
+  langs:
+  - csharp
+  - vb
+  name: Pedido(string, string, DateTime)
+  nameWithType: Pedido.Pedido(string, string, DateTime)
+  fullName: PracticaDocFX.Intermedio.Pedido.Pedido(string, string, System.DateTime)
+  type: Constructor
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: .ctor
+    path: ../src/intermedio.cs
+    startLine: 483
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Hace que las variables sean visibles y evita que esten en blanco
+  remarks: Obliga a las variables estar llenas y correctas y elimina espacios en blanco
+  example: []
+  syntax:
+    content: public Pedido(string id, string clienteId, DateTime fechaCreacionUtc)
+    parameters:
+    - id: id
+      type: System.String
+    - id: clienteId
+      type: System.String
+    - id: fechaCreacionUtc
+      type: System.DateTime
+    content.vb: Public Sub New(id As String, clienteId As String, fechaCreacionUtc As Date)
+  overload: PracticaDocFX.Intermedio.Pedido.#ctor*
+  nameWithType.vb: Pedido.New(String, String, Date)
+  fullName.vb: PracticaDocFX.Intermedio.Pedido.New(String, String, Date)
+  name.vb: New(String, String, Date)
+- uid: PracticaDocFX.Intermedio.Pedido.AgregarLinea(PracticaDocFX.Intermedio.LineaPedido)
+  commentId: M:PracticaDocFX.Intermedio.Pedido.AgregarLinea(PracticaDocFX.Intermedio.LineaPedido)
+  id: AgregarLinea(PracticaDocFX.Intermedio.LineaPedido)
+  parent: PracticaDocFX.Intermedio.Pedido
+  langs:
+  - csharp
+  - vb
+  name: AgregarLinea(LineaPedido)
+  nameWithType: Pedido.AgregarLinea(LineaPedido)
+  fullName: PracticaDocFX.Intermedio.Pedido.AgregarLinea(PracticaDocFX.Intermedio.LineaPedido)
+  type: Method
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: AgregarLinea
+    path: ../src/intermedio.cs
+    startLine: 504
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: ''
+  remarks: ''
+  example: []
+  syntax:
+    content: public void AgregarLinea(LineaPedido linea)
+    parameters:
+    - id: linea
+      type: PracticaDocFX.Intermedio.LineaPedido
+      description: ''
+    content.vb: Public Sub AgregarLinea(linea As LineaPedido)
+  overload: PracticaDocFX.Intermedio.Pedido.AgregarLinea*
+- uid: PracticaDocFX.Intermedio.Pedido.Total
+  commentId: M:PracticaDocFX.Intermedio.Pedido.Total
+  id: Total
+  parent: PracticaDocFX.Intermedio.Pedido
+  langs:
+  - csharp
+  - vb
+  name: Total()
+  nameWithType: Pedido.Total()
+  fullName: PracticaDocFX.Intermedio.Pedido.Total()
+  type: Method
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Total
+    path: ../src/intermedio.cs
+    startLine: 513
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  syntax:
+    content: public decimal Total()
+    return:
+      type: System.Decimal
+    content.vb: Public Function Total() As Decimal
+  overload: PracticaDocFX.Intermedio.Pedido.Total*
+- uid: PracticaDocFX.Intermedio.Pedido.MarcarPagado
+  commentId: M:PracticaDocFX.Intermedio.Pedido.MarcarPagado
+  id: MarcarPagado
+  parent: PracticaDocFX.Intermedio.Pedido
+  langs:
+  - csharp
+  - vb
+  name: MarcarPagado()
+  nameWithType: Pedido.MarcarPagado()
+  fullName: PracticaDocFX.Intermedio.Pedido.MarcarPagado()
+  type: Method
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: MarcarPagado
+    path: ../src/intermedio.cs
+    startLine: 521
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  syntax:
+    content: public void MarcarPagado()
+    content.vb: Public Sub MarcarPagado()
+  overload: PracticaDocFX.Intermedio.Pedido.MarcarPagado*
+- uid: PracticaDocFX.Intermedio.Pedido.Cancelar
+  commentId: M:PracticaDocFX.Intermedio.Pedido.Cancelar
+  id: Cancelar
+  parent: PracticaDocFX.Intermedio.Pedido
+  langs:
+  - csharp
+  - vb
+  name: Cancelar()
+  nameWithType: Pedido.Cancelar()
+  fullName: PracticaDocFX.Intermedio.Pedido.Cancelar()
+  type: Method
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Cancelar
+    path: ../src/intermedio.cs
+    startLine: 530
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  syntax:
+    content: public void Cancelar()
+    content.vb: Public Sub Cancelar()
+  overload: PracticaDocFX.Intermedio.Pedido.Cancelar*
+references:
+- uid: PracticaDocFX.Intermedio
+  commentId: N:PracticaDocFX.Intermedio
+  href: PracticaDocFX.html
+  name: PracticaDocFX.Intermedio
+  nameWithType: PracticaDocFX.Intermedio
+  fullName: PracticaDocFX.Intermedio
+  spec.csharp:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Intermedio
+    name: Intermedio
+    href: PracticaDocFX.Intermedio.html
+  spec.vb:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Intermedio
+    name: Intermedio
+    href: PracticaDocFX.Intermedio.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PracticaDocFX.Intermedio.Pedido.Id*
+  commentId: Overload:PracticaDocFX.Intermedio.Pedido.Id
+  href: PracticaDocFX.Intermedio.Pedido.html#PracticaDocFX_Intermedio_Pedido_Id
+  name: Id
+  nameWithType: Pedido.Id
+  fullName: PracticaDocFX.Intermedio.Pedido.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PracticaDocFX.Intermedio.Pedido.ClienteId*
+  commentId: Overload:PracticaDocFX.Intermedio.Pedido.ClienteId
+  href: PracticaDocFX.Intermedio.Pedido.html#PracticaDocFX_Intermedio_Pedido_ClienteId
+  name: ClienteId
+  nameWithType: Pedido.ClienteId
+  fullName: PracticaDocFX.Intermedio.Pedido.ClienteId
+- uid: PracticaDocFX.Intermedio.Pedido.Estado*
+  commentId: Overload:PracticaDocFX.Intermedio.Pedido.Estado
+  href: PracticaDocFX.Intermedio.Pedido.html#PracticaDocFX_Intermedio_Pedido_Estado
+  name: Estado
+  nameWithType: Pedido.Estado
+  fullName: PracticaDocFX.Intermedio.Pedido.Estado
+- uid: PracticaDocFX.Intermedio.EstadoPedido
+  commentId: T:PracticaDocFX.Intermedio.EstadoPedido
+  parent: PracticaDocFX.Intermedio
+  href: PracticaDocFX.Intermedio.EstadoPedido.html
+  name: EstadoPedido
+  nameWithType: EstadoPedido
+  fullName: PracticaDocFX.Intermedio.EstadoPedido
+- uid: PracticaDocFX.Intermedio.Pedido.Lineas*
+  commentId: Overload:PracticaDocFX.Intermedio.Pedido.Lineas
+  href: PracticaDocFX.Intermedio.Pedido.html#PracticaDocFX_Intermedio_Pedido_Lineas
+  name: Lineas
+  nameWithType: Pedido.Lineas
+  fullName: PracticaDocFX.Intermedio.Pedido.Lineas
+- uid: System.Collections.Generic.IReadOnlyList{PracticaDocFX.Intermedio.LineaPedido}
+  commentId: T:System.Collections.Generic.IReadOnlyList{PracticaDocFX.Intermedio.LineaPedido}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<LineaPedido>
+  nameWithType: IReadOnlyList<LineaPedido>
+  fullName: System.Collections.Generic.IReadOnlyList<PracticaDocFX.Intermedio.LineaPedido>
+  nameWithType.vb: IReadOnlyList(Of LineaPedido)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of PracticaDocFX.Intermedio.LineaPedido)
+  name.vb: IReadOnlyList(Of LineaPedido)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: PracticaDocFX.Intermedio.LineaPedido
+    name: LineaPedido
+    href: PracticaDocFX.Intermedio.LineaPedido.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PracticaDocFX.Intermedio.LineaPedido
+    name: LineaPedido
+    href: PracticaDocFX.Intermedio.LineaPedido.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PracticaDocFX.Intermedio.Pedido.FechaCreacionUtc*
+  commentId: Overload:PracticaDocFX.Intermedio.Pedido.FechaCreacionUtc
+  href: PracticaDocFX.Intermedio.Pedido.html#PracticaDocFX_Intermedio_Pedido_FechaCreacionUtc
+  name: FechaCreacionUtc
+  nameWithType: Pedido.FechaCreacionUtc
+  fullName: PracticaDocFX.Intermedio.Pedido.FechaCreacionUtc
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: PracticaDocFX.Intermedio.Pedido.FechaPagoUtc*
+  commentId: Overload:PracticaDocFX.Intermedio.Pedido.FechaPagoUtc
+  href: PracticaDocFX.Intermedio.Pedido.html#PracticaDocFX_Intermedio_Pedido_FechaPagoUtc
+  name: FechaPagoUtc
+  nameWithType: Pedido.FechaPagoUtc
+  fullName: PracticaDocFX.Intermedio.Pedido.FechaPagoUtc
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: PracticaDocFX.Intermedio.Pedido.#ctor*
+  commentId: Overload:PracticaDocFX.Intermedio.Pedido.#ctor
+  href: PracticaDocFX.Intermedio.Pedido.html#PracticaDocFX_Intermedio_Pedido__ctor_System_String_System_String_System_DateTime_
+  name: Pedido
+  nameWithType: Pedido.Pedido
+  fullName: PracticaDocFX.Intermedio.Pedido.Pedido
+  nameWithType.vb: Pedido.New
+  fullName.vb: PracticaDocFX.Intermedio.Pedido.New
+  name.vb: New
+- uid: PracticaDocFX.Intermedio.Pedido.AgregarLinea*
+  commentId: Overload:PracticaDocFX.Intermedio.Pedido.AgregarLinea
+  href: PracticaDocFX.Intermedio.Pedido.html#PracticaDocFX_Intermedio_Pedido_AgregarLinea_PracticaDocFX_Intermedio_LineaPedido_
+  name: AgregarLinea
+  nameWithType: Pedido.AgregarLinea
+  fullName: PracticaDocFX.Intermedio.Pedido.AgregarLinea
+- uid: PracticaDocFX.Intermedio.LineaPedido
+  commentId: T:PracticaDocFX.Intermedio.LineaPedido
+  parent: PracticaDocFX.Intermedio
+  href: PracticaDocFX.Intermedio.LineaPedido.html
+  name: LineaPedido
+  nameWithType: LineaPedido
+  fullName: PracticaDocFX.Intermedio.LineaPedido
+- uid: PracticaDocFX.Intermedio.Pedido.Total*
+  commentId: Overload:PracticaDocFX.Intermedio.Pedido.Total
+  href: PracticaDocFX.Intermedio.Pedido.html#PracticaDocFX_Intermedio_Pedido_Total
+  name: Total
+  nameWithType: Pedido.Total
+  fullName: PracticaDocFX.Intermedio.Pedido.Total
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: PracticaDocFX.Intermedio.Pedido.MarcarPagado*
+  commentId: Overload:PracticaDocFX.Intermedio.Pedido.MarcarPagado
+  href: PracticaDocFX.Intermedio.Pedido.html#PracticaDocFX_Intermedio_Pedido_MarcarPagado
+  name: MarcarPagado
+  nameWithType: Pedido.MarcarPagado
+  fullName: PracticaDocFX.Intermedio.Pedido.MarcarPagado
+- uid: PracticaDocFX.Intermedio.Pedido.Cancelar*
+  commentId: Overload:PracticaDocFX.Intermedio.Pedido.Cancelar
+  href: PracticaDocFX.Intermedio.Pedido.html#PracticaDocFX_Intermedio_Pedido_Cancelar
+  name: Cancelar
+  nameWithType: Pedido.Cancelar
+  fullName: PracticaDocFX.Intermedio.Pedido.Cancelar
