@@ -1,7 +1,7 @@
 # PASANTIA GERARD
 
 ## Descripcion
-Se realizará comentarios de código de C# y se utilizarán las herramientas de dotnet, docfx (md:markdown language) y git. Se ejecutará el programa y se debuggeará mediante archivos de configuración (json) en VSCode.
+Se realizará comentarios de código de C# y se utilizarán las herramientas de dotnet, docfx (md:markdown language) y git. Se ejecutará el programa y se debuggeará mediante archivos de configuración (json) en VSCode. Bases de progración de videojuegos.
 
 ### General (.NET SDK)
     - .net 10 runtime
@@ -27,6 +27,8 @@ Se realizará comentarios de código de C# y se utilizarán las herramientas de 
 ### Dotnet
     - dotnet new
     - dotnet run
+### Godot
+    - 
 
 ## Launch and debug
     - launch.json: ejecutar

@@ -8,7 +8,7 @@ namespace PracticaDocFX.Intermedio
     /// Su funcion es mostrar el estado del pedido del cliente
     /// </summary>
     /// <remarks>
-    /// usa elementos como Public para que sea visible para todos y Enum para crear la lista de funciones (Creado, pagado y cancelado) 
+    /// Usa elementos como Public para que sea visible para todos y Enum para crear la lista de funciones (Creado, pagado y cancelado) 
     /// </remarks>
     public enum EstadoPedido
     {
@@ -16,14 +16,12 @@ namespace PracticaDocFX.Intermedio
         Pagado = 1,
         Cancelado = 2
     }
-
-///convierte espacios como el codigo, mensaje y campo en algo visible y obliga a llenar los espacios
  
      /// <summary>
     /// Obtiene y muestra valores, tambien rechaza espacios en blanco y envia mensajes de correccion en caso de no cumplis con las excepciones 
     /// </summary>
     /// <remarks>
-    /// la palabra Sealed (Sellado) sella la clase y evita que se pueda volver a usar 
+    /// La palabra Sealed (Sellado) sella la clase y evita que se pueda volver a usar 
     /// </remarks>
     public sealed class ErrorValidacion
     {
@@ -74,24 +72,24 @@ namespace PracticaDocFX.Intermedio
     public sealed class ResultadoValidacion
     {
         /// <summary>
-        /// crea una lista no sobreescribible
+        /// Crea una lista no sobreescribible
         /// </summary>
         /// <remarks>
-        /// usa el ReadOnly y get; para crear texto solamente visible pero no editable.
+        /// Usa el ReadOnly y get; para crear texto solamente visible pero no editable.
         /// </remarks>
         public IReadOnlyList<ErrorValidacion> Errores { get; }
         /// <summary>
-        /// revisa si hay errores
+        /// Revisa si hay errores
         /// </summary>
         /// <remarks>
-        /// con la variable booleana Valido se determina si hay errores por medio del true or false
+        /// Con la variable booleana Valido se determina si hay errores por medio del true or false
         /// </remarks>
         public bool Valido => Errores.Count == 0;
         /// <summary>
-        /// usa una lista de errores ya hecha
+        /// Usa una lista de errores ya hecha
         /// </summary>
         /// <remarks>
-        /// envia lo que se considereun error a la lista de errores ya establecida
+        /// Envia lo que se considereun error a la lista de errores ya establecida
         /// </remarks>
         /// <param name="errores">
         /// Guarda errores en la propiedad 
@@ -101,20 +99,20 @@ namespace PracticaDocFX.Intermedio
             Errores = errores;
         }
         /// <summary>
-        /// crea una nueva lista de validacion
+        /// Crea una nueva lista de validacion
         /// </summary>
         /// <remarks>
-        /// crea una lista  para guardar datos de forma privada
+        /// Crea una lista  para guardar datos de forma privada
         /// </remarks>
         public static ResultadoValidacion Correcto()
         {
             return new ResultadoValidacion(new List<ErrorValidacion>());
         }
         /// <summary>
-        /// crea una lista de errores
+        /// Crea una lista de errores
         /// </summary>
         /// <remarks>
-        /// identifica y enlista los errores cometidos por el usuario
+        /// Identifica y enlista los errores cometidos por el usuario
         /// </remarks>
         public static ResultadoValidacion ConErrores(IEnumerable<ErrorValidacion> errores)
         {
@@ -124,10 +122,10 @@ namespace PracticaDocFX.Intermedio
 
     }
     /// <summary>
-    /// permite tener validaciones para productos, usuarios, etc
+    /// Permite tener validaciones para productos, usuarios, etc
     /// </summary>
     /// <remarks>
-    /// es una interfaz con reglas
+    /// Es una interfaz con reglas
     /// </remarks>
     public interface IValidador<in T>
     {
@@ -139,13 +137,12 @@ namespace PracticaDocFX.Intermedio
         /// </param>
         ResultadoValidacion Validar(T valor);
     }
-///Evita que el espacio del campo este vacio
 
     /// <summary>
-    /// evita que no hayan datos con valores nulos
+    /// Evita que no hayan datos con valores nulos
     /// </summary>
     /// <remarks>
-    /// se encarga de que los valores de los datos no tengan espacios o sean nulos
+    /// Se encarga de que los valores de los datos no tengan espacios o sean nulos
     /// </remarks>
     public sealed class ValidadorNoNulo<T> : IValidador<T>
     {
@@ -153,16 +150,19 @@ namespace PracticaDocFX.Intermedio
         /// Es la variabilidad del nombre del valor durante su validacion
         /// </summary>
         /// <remarks>
-        /// privatiza el ReadOnly y valida nombres de valores
+        /// Privatiza el ReadOnly y valida nombres de valores
         /// </remarks>
         private readonly string _nombreCampo;
 
         /// <summary>
-        /// evita que el campo del nombre del valor este en blanco
+        /// Evita que el campo del nombre del valor este en blanco
         /// </summary>
         /// <remarks>
-        /// usa excepciones, nombres en cadena y nameof para evitar errores de compilacion.
+        /// Usa excepciones, nombres en cadena y nameof para evitar errores de compilacion.
         /// </remarks>
+        /// <param name="nombreCampo">
+        /// Corresponde al nombramiento del espacio
+        /// </param>
         public ValidadorNoNulo(string nombreCampo)
         {
             if (string.IsNullOrWhiteSpace(nombreCampo))
@@ -177,7 +177,7 @@ namespace PracticaDocFX.Intermedio
         /// En caso de que el valor recibido sea nulo, se envia un mensaje para que el nombre sea corregido y llenado
         /// </remarks>
         /// <param name="valor">
-        /// 
+        /// Es el valor que se le da al nombre del campo, no puede ser nulo
         /// </param>
         public ResultadoValidacion Validar(T valor)
         {
@@ -210,7 +210,7 @@ namespace PracticaDocFX.Intermedio
         public double Maximo { get; }
 
         /// <summary>
-        /// establece un  limite minimo para el valor de la variable Minimo
+        /// Establece un  limite minimo para el valor de la variable Minimo
         /// </summary>
         /// <remarks>
         /// Evita que el valor Minimo sea mayor al maximo con excepciones y condicionales
@@ -229,7 +229,7 @@ namespace PracticaDocFX.Intermedio
         }
         /// <summary>
         /// Evita que la cadena de campo sea un espacio en blanco
-        /// evita que el valor Minimo y Maximo se salgan de su rango
+        /// Evita que el valor Minimo y Maximo se salgan de su rango
         /// </summary>
         /// <remarks>
         /// Usa una condicional y una excepcion para evitar espacios en blanco
@@ -258,7 +258,7 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// sella la clase CompositeValidador y la hace generica 
+    /// Sella la clase CompositeValidador y la hace generica 
     /// </summary>
     /// <remarks>
     /// Hace que la clase no sea heredable y hace que sea generica usando el caracter T
@@ -274,10 +274,10 @@ namespace PracticaDocFX.Intermedio
         private readonly List<IValidador<T>> _validadores = new List<IValidador<T>>();
 
         /// <summary>
-        /// envia un mensaje al programador
+        /// Envia un mensaje al programador
         /// </summary>
         /// <remarks>
-        /// en caso de que el valor sea nulo o en blanco se le envia un mensaje al programador
+        /// En caso de que el valor sea nulo o en blanco se le envia un mensaje al programador
         /// </remarks>
         /// <param name="validadores">
         /// Dan valor a los datos recibidos antes de enviarlos a la lista
@@ -288,22 +288,24 @@ namespace PracticaDocFX.Intermedio
             _validadores.AddRange(validadores);
         }
         /// <summary>
-        /// es un constructor
+        /// Es un constructor
         /// </summary>
         /// <remarks>
-        /// recibe reglas de validacion y evita que vengan con espacios en blanco 
+        /// Recibe reglas de validacion y evita que vengan con espacios en blanco 
         /// </remarks>
-       
+        /// <param name="validadores">
+        /// Lista de tamaño definido de interfaces de validador 
+        /// </param>
         public CompositeValidador(params IValidador<T>[] validadores)
         {
             if (validadores is null) throw new ArgumentNullException(nameof(validadores));
             _validadores.AddRange(validadores);
         }
         /// <summary>
-        /// reporta los errores
+        /// Reporta los errores
         /// </summary>
         /// <remarks>
-        /// agarra los datos y entrega un reporte de errores al programador
+        /// Agarra los datos y entrega un reporte de errores al programador
         /// </remarks>
         /// <param name="valor">
         /// El entero numerico del resultado de la validación
@@ -323,7 +325,7 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// sella la clase Producto
+    /// Sella la clase Producto
     /// </summary>
     /// <remarks>
     /// Usa sealed para sellar una clase y hacerla no heredable
@@ -331,17 +333,17 @@ namespace PracticaDocFX.Intermedio
     public sealed class Producto
     {   
         /// <summary>
-        /// atributa las propiedades Codigo, Nombre y Precio
+        /// Atributa las propiedades Codigo, Nombre y Precio
         /// </summary>
         /// <remarks>
-        /// permite leer el valor de las propiedades con { get; }
+        /// Permite leer el valor de las propiedades con { get; }
         /// </remarks>
         public string Codigo { get; }
         public string Nombre { get; }
         public decimal Precio { get; }
 
         /// <summary>
-        /// evita que los espacios en los que deban ir las propiedades esten vacios o de otro modo, tengan espacios blancos
+        /// Evita que los espacios en los que deban ir las propiedades esten vacios o de otro modo, tengan espacios blancos
         /// </summary>
         /// <remarks>
         /// Usa herramientas como Trim y usa excepciones, tambien evita que el valor de precio sea negativo 
@@ -371,10 +373,10 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// sella una clase con sealed
+    /// Sella una clase con sealed
     /// </summary>
     /// <remarks>
-    /// sella la clase LineaPedido y permite que sea leida por cualquier persona haciendola publica
+    /// Sella la clase LineaPedido y permite que sea leida por cualquier persona haciendola publica
     /// </remarks>
     public sealed class LineaPedido
     {
@@ -382,7 +384,7 @@ namespace PracticaDocFX.Intermedio
         /// Hace de la clase producto algo leible y se pueda tener su valor
         /// </summary>
         /// <remarks>
-        /// usa public y get; para leer y obtener valores
+        /// Usa public y get; para leer y obtener valores
         /// </remarks>
         public Producto Producto { get; }
 
@@ -390,15 +392,15 @@ namespace PracticaDocFX.Intermedio
         /// Hace que la propiedad de Cantidad solo admita numeros enteros
         /// </summary>
         /// <remarks>
-        /// usa int para nombrar la propiedad como numerica
+        /// Usa int para nombrar la propiedad como numerica
         /// </remarks>
         public int Cantidad { get; }
 
         /// <summary>
-        /// evita que el producto sea nulo o menor a 1
+        /// Evita que el producto sea nulo o menor a 1
         /// </summary>
         /// <remarks>
-        /// como condicional en caso de que el producto sea menor a 1 no sera permitido, y se enviara un mensaje para que sea mayor a 1.
+        /// Como condicional en caso de que el producto sea menor a 1 no sera permitido, y se enviara un mensaje para que sea mayor a 1.
         /// </remarks>
         public LineaPedido(Producto producto, int cantidad)
         {
@@ -407,7 +409,7 @@ namespace PracticaDocFX.Intermedio
             Cantidad = cantidad;
         }
         /// <summary>
-        /// hace visible el total
+        /// Hace visible el total
         /// </summary>
         /// <remarks>
         /// Hace que el total pueda tener decimales  
@@ -418,10 +420,10 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// publica y sella la clase Pedido
+    /// Publica y sella la clase Pedido
     /// </summary>
     /// <remarks>
-    /// usa public y sealed para sellar la clase
+    /// Usa public y sealed para sellar la clase
     /// </remarks>
     public sealed class Pedido
     {
@@ -429,7 +431,7 @@ namespace PracticaDocFX.Intermedio
         /// Hace que la LineaPedido sea unicamente de lectura
         /// </summary>
         /// <remarks>
-        /// usa ReadOnly y privatiza la propiedad
+        /// Usa ReadOnly y privatiza la propiedad
         /// </remarks>
         private readonly List<LineaPedido> _lineas = new List<LineaPedido>();
 
@@ -437,7 +439,7 @@ namespace PracticaDocFX.Intermedio
         /// Hace que las propiedades Id y ClienteId tengan un valor obtenible
         /// </summary>
         /// <remarks>
-        /// usa propiedades de cadena y get; para la obtencion y visualizacion de valores
+        /// Usa propiedades de cadena y get; para la obtencion y visualizacion de valores
         /// </remarks>
         public string Id { get; }
         public string ClienteId { get; }
@@ -446,7 +448,7 @@ namespace PracticaDocFX.Intermedio
         /// Publica la propiedad EstadoPedido y hace que solo pueda ser definida dentro de la clase
         /// </summary>
         /// <remarks>
-        /// publica la propiedad y la hace definible bajo una regla
+        /// Publica la propiedad y la hace definible bajo una regla
         /// </remarks>
         public EstadoPedido Estado { get; private set; }
 
