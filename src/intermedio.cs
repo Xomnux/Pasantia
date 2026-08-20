@@ -20,7 +20,7 @@ namespace PracticaDocFX.Intermedio
 ///convierte espacios como el codigo, mensaje y campo en algo visible y obliga a llenar los espacios
  
      /// <summary>
-    /// funciona como un sellador de clases
+    /// Obtiene y muestra valores, tambien rechaza espacios en blanco y envia mensajes de correccion en caso de no cumplis con las excepciones 
     /// </summary>
     /// <remarks>
     /// la palabra Sealed (Sellado) sella la clase y evita que se pueda volver a usar 
@@ -176,6 +176,9 @@ namespace PracticaDocFX.Intermedio
         /// <remarks>
         /// En caso de que el valor recibido sea nulo, se envia un mensaje para que el nombre sea corregido y llenado
         /// </remarks>
+        /// <param name="valor">
+        /// 
+        /// </param>
         public ResultadoValidacion Validar(T valor)
         {
             if (valor is null)
@@ -190,10 +193,10 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// sella una clase
+    /// Establece un  rango minimo y maximo que no puede ser excedido, ademas establece que su espacio debe ser sin espacios en blanco
     /// </summary>
     /// <remarks>
-    /// sella la clase ValidadorRango
+    /// Establece valores como enteros dobles y exige que no se dejen en blanco
     /// </remarks>
     public sealed class ValidadorRango
     {
@@ -212,6 +215,12 @@ namespace PracticaDocFX.Intermedio
         /// <remarks>
         /// Evita que el valor Minimo sea mayor al maximo con excepciones y condicionales
         /// </remarks>
+        /// <param name="maximo">
+        /// Es el rango maximo posible que puede tener el valor, debe ser mayor al minimo.
+        /// </param>
+        /// <param name="minimo">
+        /// Es el rango minimo posible que puede tener el valor, debe ser menor al maximo.
+        /// </param>
         public ValidadorRango(double minimo, double maximo)
         {
             if (minimo > maximo) throw new ArgumentOutOfRangeException(nameof(minimo), "El mínimo debe ser <= máximo.");
@@ -226,6 +235,12 @@ namespace PracticaDocFX.Intermedio
         /// Usa una condicional y una excepcion para evitar espacios en blanco
         /// En casode que los valores Minimo y Maximo excendan su limite, devolvera el valor y enviara un mensaje de correccion.
         /// </remarks>
+        /// <param name="campo">
+        /// Cadena que corresponde al campo
+        /// </param>
+        /// <param name="valor">
+        /// Doble que corresponde al valor
+        /// </param>
         public ResultadoValidacion Validar(double valor, string campo)
         {
             if (string.IsNullOrWhiteSpace(campo))
