@@ -1,7 +1,15 @@
 # PASANTIA GERARD
 
 ## Descripcion
-Se realizará comentarios de código de C# y se utilizarán las herramientas de dotnet,dotnet  docfx y git.
+Se realizará comentarios de código de C# y se utilizarán las herramientas de dotnet, docfx y git. Se ejecutará el programa y se debuggeará.
+
+## General
+    - .net 10 runtime
+    - dotnet
+## VS Code
+    - C# Extension
+## Visual Sutido
+    - Desarrollo de escritorio .NET
 
 ## Comandos
 ### Docfx

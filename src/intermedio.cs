@@ -262,10 +262,10 @@ namespace PracticaDocFX.Intermedio
             _validadores.AddRange(validadores);
         }
         /// <summary>
-        /// 
+        /// reporta los errores
         /// </summary>
         /// <remarks>
-        /// 
+        /// agarra los datos y entrega un reporte de errores al programador
         /// </remarks>
         public ResultadoValidacion Validar(T valor)
         {
