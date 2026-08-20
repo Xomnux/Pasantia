@@ -3,7 +3,7 @@
 ## Descripcion
 Se realizará comentarios de código de C# y se utilizarán las herramientas de dotnet, docfx y git. Se ejecutará el programa y se debuggeará.
 
-## General
+## General (.NET SDK)
     - .net 10 runtime
     - dotnet
 ## VS Code
