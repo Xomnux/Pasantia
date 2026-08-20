@@ -44,6 +44,15 @@ namespace PracticaDocFX.Intermedio
         /// Esta funcion hace que encaso de que haya informacion nula o incorrecta, el sistema envie un codigo de error para que sea corregido
         /// Trim elimina espacios en blanco accidentales y string? hace que el parametro pueda estar lleno o nulo
         /// </remarks>
+        /// <param name="campo">
+        /// Cadena que representa el campo
+        /// </param>
+        /// <param name="codigo">
+        /// Cadena que representa el codigo
+        /// </param>
+        /// <param name="mensaje">
+        /// Cadena que representa al mensaje
+        /// </param>
         public ErrorValidacion(string codigo, string mensaje, string? campo = null)
         {
             if (string.IsNullOrWhiteSpace(codigo))
@@ -57,10 +66,10 @@ namespace PracticaDocFX.Intermedio
         }
     }
         ///<summary>
-        /// sella la clase
+        /// Brinda el resultado de la validacion
         /// </summary>
         /// <remarks>
-        /// Sealed sella la clase ResultadoValidacion
+        /// 
         /// </remarks>
     public sealed class ResultadoValidacion
     {
@@ -84,6 +93,9 @@ namespace PracticaDocFX.Intermedio
         /// <remarks>
         /// envia lo que se considereun error a la lista de errores ya establecida
         /// </remarks>
+        /// <param name="errores">
+        /// Guarda errores en la propiedad 
+        /// </param>
         private ResultadoValidacion(List<ErrorValidacion> errores)
         {
             Errores = errores;
@@ -109,6 +121,7 @@ namespace PracticaDocFX.Intermedio
             if (errores is null) throw new ArgumentNullException(nameof(errores));
             return new ResultadoValidacion(errores.ToList());
         }
+
     }
     /// <summary>
     /// permite tener validaciones para productos, usuarios, etc
@@ -118,6 +131,12 @@ namespace PracticaDocFX.Intermedio
     /// </remarks>
     public interface IValidador<in T>
     {
+        /// <summary>
+        ///El constructor hace que la propiedad tenga un valor generico
+        /// </summary>
+        /// <param name="valor">
+        /// Le da un valor generico a la propiedad, asi que le permite contener enteros y cadenas
+        /// </param>
         ResultadoValidacion Validar(T valor);
     }
 ///Evita que el espacio del campo este vacio
@@ -245,6 +264,9 @@ namespace PracticaDocFX.Intermedio
         /// <remarks>
         /// en caso de que el valor sea nulo o en blanco se le envia un mensaje al programador
         /// </remarks>
+        /// <param name="validadores">
+        /// Dan valor a los datos recibidos antes de enviarlos a la lista
+        /// </param>
         public CompositeValidador(IEnumerable<IValidador<T>> validadores)
         {
             if (validadores is null) throw new ArgumentNullException(nameof(validadores));
@@ -256,6 +278,7 @@ namespace PracticaDocFX.Intermedio
         /// <remarks>
         /// recibe reglas de validacion y evita que vengan con espacios en blanco 
         /// </remarks>
+       
         public CompositeValidador(params IValidador<T>[] validadores)
         {
             if (validadores is null) throw new ArgumentNullException(nameof(validadores));
@@ -267,6 +290,9 @@ namespace PracticaDocFX.Intermedio
         /// <remarks>
         /// agarra los datos y entrega un reporte de errores al programador
         /// </remarks>
+        /// <param name="valor">
+        /// El entero numerico del resultado de la validación
+        /// </param>
         public ResultadoValidacion Validar(T valor)
         {
             var errores = new List<ErrorValidacion>();
@@ -282,17 +308,39 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// 
+    /// sella la clase Producto
     /// </summary>
     /// <remarks>
-    /// 
+    /// Usa sealed para sellar una clase y hacerla no heredable
     /// </remarks>
     public sealed class Producto
-    {
+    {   
+        /// <summary>
+        /// atributa las propiedades Codigo, Nombre y Precio
+        /// </summary>
+        /// <remarks>
+        /// permite leer el valor de las propiedades con { get; }
+        /// </remarks>
         public string Codigo { get; }
         public string Nombre { get; }
         public decimal Precio { get; }
 
+        /// <summary>
+        /// evita que los espacios en los que deban ir las propiedades esten vacios o de otro modo, tengan espacios blancos
+        /// </summary>
+        /// <remarks>
+        /// Usa herramientas como Trim y usa excepciones, tambien evita que el valor de precio sea negativo 
+        /// y le permite tener decimales.
+        /// </remarks>
+        /// <param name="codigo">
+        /// Cadena que representa el codigo del producto
+        /// </param>
+        /// <param name="nombre">
+        /// Cadena que representa el nombre del producto
+        /// </param>
+        /// <param name="precio">
+        /// Numero que representa el precio del producto
+        /// </param>
         public Producto(string codigo, string nombre, decimal precio)
         {
             if (string.IsNullOrWhiteSpace(codigo))
@@ -308,46 +356,114 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// 
+    /// sella una clase con sealed
     /// </summary>
     /// <remarks>
-    /// 
+    /// sella la clase LineaPedido y permite que sea leida por cualquier persona haciendola publica
     /// </remarks>
     public sealed class LineaPedido
     {
+        /// <summary>
+        /// Hace de la clase producto algo leible y se pueda tener su valor
+        /// </summary>
+        /// <remarks>
+        /// usa public y get; para leer y obtener valores
+        /// </remarks>
         public Producto Producto { get; }
+
+        /// <summary>
+        /// Hace que la propiedad de Cantidad solo admita numeros enteros
+        /// </summary>
+        /// <remarks>
+        /// usa int para nombrar la propiedad como numerica
+        /// </remarks>
         public int Cantidad { get; }
 
+        /// <summary>
+        /// evita que el producto sea nulo o menor a 1
+        /// </summary>
+        /// <remarks>
+        /// como condicional en caso de que el producto sea menor a 1 no sera permitido, y se enviara un mensaje para que sea mayor a 1.
+        /// </remarks>
         public LineaPedido(Producto producto, int cantidad)
         {
             Producto = producto ?? throw new ArgumentNullException(nameof(producto));
             if (cantidad < 1) throw new ArgumentOutOfRangeException(nameof(cantidad), "La cantidad debe ser >= 1.");
             Cantidad = cantidad;
         }
-
+        /// <summary>
+        /// hace visible el total
+        /// </summary>
+        /// <remarks>
+        /// Hace que el total pueda tener decimales  
+        /// </remarks>
         public decimal TotalLinea()
         {
             return Producto.Precio * Cantidad;
         }
     }
     /// <summary>
-    /// 
+    /// publica y sella la clase Pedido
     /// </summary>
     /// <remarks>
-    /// 
+    /// usa public y sealed para sellar la clase
     /// </remarks>
     public sealed class Pedido
     {
+        /// <summary>
+        /// Hace que la LineaPedido sea unicamente de lectura
+        /// </summary>
+        /// <remarks>
+        /// usa ReadOnly y privatiza la propiedad
+        /// </remarks>
         private readonly List<LineaPedido> _lineas = new List<LineaPedido>();
 
+        /// <summary>
+        /// Hace que las propiedades Id y ClienteId tengan un valor obtenible
+        /// </summary>
+        /// <remarks>
+        /// usa propiedades de cadena y get; para la obtencion y visualizacion de valores
+        /// </remarks>
         public string Id { get; }
         public string ClienteId { get; }
+
+        /// <summary>
+        /// Publica la propiedad EstadoPedido y hace que solo pueda ser definida dentro de la clase
+        /// </summary>
+        /// <remarks>
+        /// publica la propiedad y la hace definible bajo una regla
+        /// </remarks>
         public EstadoPedido Estado { get; private set; }
+
+        /// <summary>
+        /// Hace que LineaPedido solo se pueda leer
+        /// </summary>
+        /// <remarks>
+        /// Hace que la propiedad no sea editable
+        /// </remarks>
         public IReadOnlyList<LineaPedido> Lineas => _lineas;
 
+        /// <summary>
+        /// Registra la Fecha de Creacion
+        /// </summary>
+        /// <remarks>
+        /// Hace que una fecha de creacion sea obtenible y guardada
+        /// </remarks>
         public DateTime FechaCreacionUtc { get; }
+        /// <summary>
+        /// Registra la fecha de pago
+        /// </summary>
+        /// <remarks>
+        /// Hace que la fecha de pago se pueda obtener y sea definida solo dentro de su clase
+        /// </remarks>
         public DateTime? FechaPagoUtc { get; private set; }
 
+        /// <summary>
+        /// Hace que las variables sean visibles y evita que esten en blanco
+        /// </summary>
+        /// <remarks>
+        /// Obliga a las variables estar llenas y correctas y elimina espacios en blanco 
+        /// </remarks>
         public Pedido(string id, string clienteId, DateTime fechaCreacionUtc)
         {
             if (string.IsNullOrWhiteSpace(id))
@@ -360,7 +476,15 @@ namespace PracticaDocFX.Intermedio
             FechaCreacionUtc = fechaCreacionUtc;
             Estado = EstadoPedido.Creado;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <param name="linea">
+        /// 
+        /// </param>
         public void AgregarLinea(LineaPedido linea)
         {
             if (linea is null) throw new ArgumentNullException(nameof(linea));

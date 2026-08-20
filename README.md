@@ -1,14 +1,14 @@
 # PASANTIA GERARD
 
 ## Descripcion
-Se realizará comentarios de código de C# y se utilizarán las herramientas de dotnet, docfx y git. Se ejecutará el programa y se debuggeará.
+Se realizará comentarios de código de C# y se utilizarán las herramientas de dotnet, docfx (md:markdown language) y git. Se ejecutará el programa y se debuggeará mediante archivos de configuración (json) en VSCode.
 
-## General (.NET SDK)
+### General (.NET SDK)
     - .net 10 runtime
     - dotnet
-## VS Code
+### VS Code
     - C# Extension
-## Visual Sutido
+### Visual Sutido*
     - Desarrollo de escritorio .NET
 
 ## Comandos
@@ -28,6 +28,13 @@ Se realizará comentarios de código de C# y se utilizarán las herramientas de 
     - dotnet new
     - dotnet run
 
-### Documentacion
+## Launch and debug
+    - launch.json: ejecutar
+    - task.json: tareas varias
+### Run
+    - Terminal->Run Task
+    - Run->Start Debugging
+
+## Documentacion
     - XML: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags
     - DocFX: https://dotnet.github.io/docfx/docs/markdown.html

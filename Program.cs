@@ -1,6 +1,4 @@
-﻿using PracticaDocFX.Facil;
-using PracticaDocFX.Intermedio;
-using PracticaDocFX.Avanzado;
+﻿using System;
 
 class Program
 {
