@@ -1,0 +1,607 @@
+{
+  "source_base_path": "C:/Users/Usuario/Desktop/Pasantia/doc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.ContextoFlujo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.ContextoFlujo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.ContextoFlujo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.DemoAvanzado.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.DemoAvanzado.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.DemoAvanzado",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.Dinero.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.Dinero.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.Dinero",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.EstadoTransaccion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.EstadoTransaccion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.EstadoTransaccion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.HoraSistema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.HoraSistema.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.HoraSistema",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.IProveedorHora.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.IProveedorHora.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.IProveedorHora",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.IPuertaPago.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.IPuertaPago.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.IPuertaPago",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.IRegistradorLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.IRegistradorLog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.IRegistradorLog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.IRepositorioPedidos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.IRepositorioPedidos.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.IRepositorioPedidos",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.Identificador.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.Identificador.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.Identificador",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.MotorFlujos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.MotorFlujos.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.MotorFlujos",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.PedidoAgregado.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.PedidoAgregado.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.PedidoAgregado",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.PedidoLinea.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.PedidoLinea.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.PedidoLinea",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.PuertaPagoIdempotenteEnMemoria.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.PuertaPagoIdempotenteEnMemoria.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.PuertaPagoIdempotenteEnMemoria",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.RegistradorLogEnMemoria.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.RegistradorLogEnMemoria.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.RegistradorLogEnMemoria",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.RegistroLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.RegistroLog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.RegistroLog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.RepositorioPedidosEnMemoria.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.RepositorioPedidosEnMemoria.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.RepositorioPedidosEnMemoria",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.ResultadoOperacion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.ResultadoOperacion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.ResultadoOperacion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.ServicioPago.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.ServicioPago.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.ServicioPago",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.SeveridadLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.SeveridadLog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado.SeveridadLog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Avanzado.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Avanzado.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Avanzado",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Facil.ColaSimple-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Facil.ColaSimple-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Facil.ColaSimple<T>",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Facil.ColaSimple-1.yml\" sourcestartlinenumber=\"1\">Enfila y desenfila los valores</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Facil.Contador.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Facil.Contador.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Facil.Contador",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Facil.Contador.yml\" sourcestartlinenumber=\"1\">Aumenta o disminuye el valor inicial de la variable</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Facil.EtiquetaTexto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Facil.EtiquetaTexto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Facil.EtiquetaTexto",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Facil.EtiquetaTexto.yml\" sourcestartlinenumber=\"1\">Establece que en la etiqueta del texto no puede ir espacio en blanco</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Facil.NivelAccion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Facil.NivelAccion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Facil.NivelAccion",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Facil.NivelAccion.yml\" sourcestartlinenumber=\"1\">Enumera el nivel de accion</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Facil.UtilidadesBasicas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Facil.UtilidadesBasicas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Facil.UtilidadesBasicas",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Facil.UtilidadesBasicas.yml\" sourcestartlinenumber=\"1\">Devuelve valores no deseados</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Facil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Facil.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Facil",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.CompositeValidador-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.CompositeValidador-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.CompositeValidador<T>",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.CompositeValidador-1.yml\" sourcestartlinenumber=\"1\">Enlista y valida los productos por medio de enumeracion logica</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.DemoIntermedio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.DemoIntermedio.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.DemoIntermedio",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.DemoIntermedio.yml\" sourcestartlinenumber=\"1\">Clase que prueba el archivo intermedio</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.ErrorValidacion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.ErrorValidacion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.ErrorValidacion",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.ErrorValidacion.yml\" sourcestartlinenumber=\"1\">Obtiene y muestra valores, tambien rechaza espacios en blanco y envia mensajes de correccion en caso de no cumplis con las excepciones</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.EstadoPedido.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.EstadoPedido.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.EstadoPedido",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.EstadoPedido.yml\" sourcestartlinenumber=\"1\">Su funcion es mostrar el estado del pedido del cliente</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.IValidador-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.IValidador-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.IValidador<T>",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.IValidador-1.yml\" sourcestartlinenumber=\"1\">Permite tener validaciones para productos, usuarios, etc</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.LineaPedido.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.LineaPedido.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.LineaPedido",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.LineaPedido.yml\" sourcestartlinenumber=\"1\">Muestra el producto y cantidad</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.Pedido.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.Pedido.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.Pedido",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.Pedido.yml\" sourcestartlinenumber=\"1\">Corresponde al Pedido del cliente en lista, estado, informacion y fecha de pago y creacion</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.Producto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.Producto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.Producto",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.Producto.yml\" sourcestartlinenumber=\"1\">Sella la clase Producto</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.RepositorioPedidosEnMemoria.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.RepositorioPedidosEnMemoria.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.RepositorioPedidosEnMemoria",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.RepositorioPedidosEnMemoria.yml\" sourcestartlinenumber=\"1\">Base de datos de los Pedidos</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.ResultadoValidacion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.ResultadoValidacion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.ResultadoValidacion",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.ResultadoValidacion.yml\" sourcestartlinenumber=\"1\">Brinda el resultado de la validacion</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.ValidadorNoNulo-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.ValidadorNoNulo-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.ValidadorNoNulo<T>",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.ValidadorNoNulo-1.yml\" sourcestartlinenumber=\"1\">Evita que no hayan datos con valores nulos</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.ValidadorRango.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.ValidadorRango.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio.ValidadorRango",
+      "Summary": "<p sourcefile=\"api/PracticaDocFX.Intermedio.ValidadorRango.yml\" sourcestartlinenumber=\"1\">Establece un  rango minimo y maximo que no puede ser excedido, ademas establece que su espacio debe ser sin espacios en blanco</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PracticaDocFX.Intermedio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PracticaDocFX.Intermedio.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PracticaDocFX.Intermedio",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

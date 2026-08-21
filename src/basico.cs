@@ -237,10 +237,10 @@ namespace PracticaDocFX.Facil
         private readonly Queue<T> _cola = new Queue<T>();
 
         /// <summary>
-        /// Envia la cantidad del numero a la cola
+        /// Envia la cantidad de elementos a la cola
         /// </summary>
         /// <remarks>
-        /// Usa la variable de cantidad para enviarla a la cola de valores
+        /// Usa la variable de cantidad para enviarla a la cola de elementos
         /// </remarks>
         public int Cantidad => _cola.Count;
 
@@ -258,10 +258,10 @@ namespace PracticaDocFX.Facil
             _cola.Enqueue(elemento);
         }
         ///<summary>
-        /// Desencola los numeros enteros
+        /// Desencola los tipos de dato
         /// </summary>
         /// <remarks>
-        /// Desencola con desencolar 
+        /// Desencola con desencolar
         /// </remarks>
         public T Desencolar()
         {

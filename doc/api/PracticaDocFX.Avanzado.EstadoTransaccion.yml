@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: PracticaDocFX.Avanzado.EstadoTransaccion
+  commentId: T:PracticaDocFX.Avanzado.EstadoTransaccion
+  id: EstadoTransaccion
+  parent: PracticaDocFX.Avanzado
+  children:
+  - PracticaDocFX.Avanzado.EstadoTransaccion.Completada
+  - PracticaDocFX.Avanzado.EstadoTransaccion.Pendiente
+  - PracticaDocFX.Avanzado.EstadoTransaccion.Rechazada
+  langs:
+  - csharp
+  - vb
+  name: EstadoTransaccion
+  nameWithType: EstadoTransaccion
+  fullName: PracticaDocFX.Avanzado.EstadoTransaccion
+  type: Enum
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: EstadoTransaccion
+    path: ../src/avanzado.cs
+    startLine: 112
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: public enum EstadoTransaccion
+    content.vb: Public Enum EstadoTransaccion
+- uid: PracticaDocFX.Avanzado.EstadoTransaccion.Pendiente
+  commentId: F:PracticaDocFX.Avanzado.EstadoTransaccion.Pendiente
+  id: Pendiente
+  parent: PracticaDocFX.Avanzado.EstadoTransaccion
+  langs:
+  - csharp
+  - vb
+  name: Pendiente
+  nameWithType: EstadoTransaccion.Pendiente
+  fullName: PracticaDocFX.Avanzado.EstadoTransaccion.Pendiente
+  type: Field
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Pendiente
+    path: ../src/avanzado.cs
+    startLine: 114
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: Pendiente = 0
+    return:
+      type: PracticaDocFX.Avanzado.EstadoTransaccion
+- uid: PracticaDocFX.Avanzado.EstadoTransaccion.Completada
+  commentId: F:PracticaDocFX.Avanzado.EstadoTransaccion.Completada
+  id: Completada
+  parent: PracticaDocFX.Avanzado.EstadoTransaccion
+  langs:
+  - csharp
+  - vb
+  name: Completada
+  nameWithType: EstadoTransaccion.Completada
+  fullName: PracticaDocFX.Avanzado.EstadoTransaccion.Completada
+  type: Field
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Completada
+    path: ../src/avanzado.cs
+    startLine: 115
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: Completada = 1
+    return:
+      type: PracticaDocFX.Avanzado.EstadoTransaccion
+- uid: PracticaDocFX.Avanzado.EstadoTransaccion.Rechazada
+  commentId: F:PracticaDocFX.Avanzado.EstadoTransaccion.Rechazada
+  id: Rechazada
+  parent: PracticaDocFX.Avanzado.EstadoTransaccion
+  langs:
+  - csharp
+  - vb
+  name: Rechazada
+  nameWithType: EstadoTransaccion.Rechazada
+  fullName: PracticaDocFX.Avanzado.EstadoTransaccion.Rechazada
+  type: Field
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Rechazada
+    path: ../src/avanzado.cs
+    startLine: 116
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: Rechazada = 2
+    return:
+      type: PracticaDocFX.Avanzado.EstadoTransaccion
+references:
+- uid: PracticaDocFX.Avanzado
+  commentId: N:PracticaDocFX.Avanzado
+  href: PracticaDocFX.html
+  name: PracticaDocFX.Avanzado
+  nameWithType: PracticaDocFX.Avanzado
+  fullName: PracticaDocFX.Avanzado
+  spec.csharp:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Avanzado
+    name: Avanzado
+    href: PracticaDocFX.Avanzado.html
+  spec.vb:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Avanzado
+    name: Avanzado
+    href: PracticaDocFX.Avanzado.html
+- uid: PracticaDocFX.Avanzado.EstadoTransaccion
+  commentId: T:PracticaDocFX.Avanzado.EstadoTransaccion
+  parent: PracticaDocFX.Avanzado
+  href: PracticaDocFX.Avanzado.EstadoTransaccion.html
+  name: EstadoTransaccion
+  nameWithType: EstadoTransaccion
+  fullName: PracticaDocFX.Avanzado.EstadoTransaccion

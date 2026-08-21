@@ -1,0 +1,141 @@
+### YamlMime:ManagedReference
+items:
+- uid: PracticaDocFX.Avanzado.IRepositorioPedidos
+  commentId: T:PracticaDocFX.Avanzado.IRepositorioPedidos
+  id: IRepositorioPedidos
+  parent: PracticaDocFX.Avanzado
+  children:
+  - PracticaDocFX.Avanzado.IRepositorioPedidos.Guardar(PracticaDocFX.Avanzado.PedidoAgregado)
+  - PracticaDocFX.Avanzado.IRepositorioPedidos.Obtener(PracticaDocFX.Avanzado.Identificador)
+  langs:
+  - csharp
+  - vb
+  name: IRepositorioPedidos
+  nameWithType: IRepositorioPedidos
+  fullName: PracticaDocFX.Avanzado.IRepositorioPedidos
+  type: Interface
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: IRepositorioPedidos
+    path: ../src/avanzado.cs
+    startLine: 278
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: public interface IRepositorioPedidos
+    content.vb: Public Interface IRepositorioPedidos
+  derivedClasses:
+  - PracticaDocFX.Avanzado.RepositorioPedidosEnMemoria
+- uid: PracticaDocFX.Avanzado.IRepositorioPedidos.Obtener(PracticaDocFX.Avanzado.Identificador)
+  commentId: M:PracticaDocFX.Avanzado.IRepositorioPedidos.Obtener(PracticaDocFX.Avanzado.Identificador)
+  id: Obtener(PracticaDocFX.Avanzado.Identificador)
+  parent: PracticaDocFX.Avanzado.IRepositorioPedidos
+  langs:
+  - csharp
+  - vb
+  name: Obtener(Identificador)
+  nameWithType: IRepositorioPedidos.Obtener(Identificador)
+  fullName: PracticaDocFX.Avanzado.IRepositorioPedidos.Obtener(PracticaDocFX.Avanzado.Identificador)
+  type: Method
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Obtener
+    path: ../src/avanzado.cs
+    startLine: 280
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: PedidoAgregado? Obtener(Identificador id)
+    parameters:
+    - id: id
+      type: PracticaDocFX.Avanzado.Identificador
+    return:
+      type: PracticaDocFX.Avanzado.PedidoAgregado
+    content.vb: Function Obtener(id As Identificador) As PedidoAgregado
+  overload: PracticaDocFX.Avanzado.IRepositorioPedidos.Obtener*
+- uid: PracticaDocFX.Avanzado.IRepositorioPedidos.Guardar(PracticaDocFX.Avanzado.PedidoAgregado)
+  commentId: M:PracticaDocFX.Avanzado.IRepositorioPedidos.Guardar(PracticaDocFX.Avanzado.PedidoAgregado)
+  id: Guardar(PracticaDocFX.Avanzado.PedidoAgregado)
+  parent: PracticaDocFX.Avanzado.IRepositorioPedidos
+  langs:
+  - csharp
+  - vb
+  name: Guardar(PedidoAgregado)
+  nameWithType: IRepositorioPedidos.Guardar(PedidoAgregado)
+  fullName: PracticaDocFX.Avanzado.IRepositorioPedidos.Guardar(PracticaDocFX.Avanzado.PedidoAgregado)
+  type: Method
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Guardar
+    path: ../src/avanzado.cs
+    startLine: 281
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: void Guardar(PedidoAgregado pedido)
+    parameters:
+    - id: pedido
+      type: PracticaDocFX.Avanzado.PedidoAgregado
+    content.vb: Sub Guardar(pedido As PedidoAgregado)
+  overload: PracticaDocFX.Avanzado.IRepositorioPedidos.Guardar*
+references:
+- uid: PracticaDocFX.Avanzado
+  commentId: N:PracticaDocFX.Avanzado
+  href: PracticaDocFX.html
+  name: PracticaDocFX.Avanzado
+  nameWithType: PracticaDocFX.Avanzado
+  fullName: PracticaDocFX.Avanzado
+  spec.csharp:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Avanzado
+    name: Avanzado
+    href: PracticaDocFX.Avanzado.html
+  spec.vb:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Avanzado
+    name: Avanzado
+    href: PracticaDocFX.Avanzado.html
+- uid: PracticaDocFX.Avanzado.IRepositorioPedidos.Obtener*
+  commentId: Overload:PracticaDocFX.Avanzado.IRepositorioPedidos.Obtener
+  href: PracticaDocFX.Avanzado.IRepositorioPedidos.html#PracticaDocFX_Avanzado_IRepositorioPedidos_Obtener_PracticaDocFX_Avanzado_Identificador_
+  name: Obtener
+  nameWithType: IRepositorioPedidos.Obtener
+  fullName: PracticaDocFX.Avanzado.IRepositorioPedidos.Obtener
+- uid: PracticaDocFX.Avanzado.Identificador
+  commentId: T:PracticaDocFX.Avanzado.Identificador
+  parent: PracticaDocFX.Avanzado
+  href: PracticaDocFX.Avanzado.Identificador.html
+  name: Identificador
+  nameWithType: Identificador
+  fullName: PracticaDocFX.Avanzado.Identificador
+- uid: PracticaDocFX.Avanzado.PedidoAgregado
+  commentId: T:PracticaDocFX.Avanzado.PedidoAgregado
+  parent: PracticaDocFX.Avanzado
+  href: PracticaDocFX.Avanzado.PedidoAgregado.html
+  name: PedidoAgregado
+  nameWithType: PedidoAgregado
+  fullName: PracticaDocFX.Avanzado.PedidoAgregado
+- uid: PracticaDocFX.Avanzado.IRepositorioPedidos.Guardar*
+  commentId: Overload:PracticaDocFX.Avanzado.IRepositorioPedidos.Guardar
+  href: PracticaDocFX.Avanzado.IRepositorioPedidos.html#PracticaDocFX_Avanzado_IRepositorioPedidos_Guardar_PracticaDocFX_Avanzado_PedidoAgregado_
+  name: Guardar
+  nameWithType: IRepositorioPedidos.Guardar
+  fullName: PracticaDocFX.Avanzado.IRepositorioPedidos.Guardar

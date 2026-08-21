@@ -474,7 +474,7 @@ namespace PracticaDocFX.Intermedio
         public EstadoPedido Estado { get; private set; }
 
         /// <summary>
-        /// 
+        /// Muestra el estado del pedido
         /// </summary>
         /// <remarks>
         /// Hace que la propiedad no sea editable

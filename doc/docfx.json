@@ -28,6 +28,7 @@
             "_appName": "My API"
         },
         "template": [
+            "default",
             "modern"
         ]
     }

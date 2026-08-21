@@ -191,10 +191,10 @@
         </member>
         <member name="P:PracticaDocFX.Facil.ColaSimple`1.Cantidad">
             <summary>
-            Envia la cantidad del numero a la cola
+            Envia la cantidad de elementos a la cola
             </summary>
             <remarks>
-            Usa la variable de cantidad para enviarla a la cola de valores
+            Usa la variable de cantidad para enviarla a la cola de elementos
             </remarks>
         </member>
         <member name="M:PracticaDocFX.Facil.ColaSimple`1.Encolar(`0)">
@@ -210,10 +210,10 @@
         </member>
         <member name="M:PracticaDocFX.Facil.ColaSimple`1.Desencolar">
             <summary>
-             Desencola los numeros enteros
+             Desencola los tipos de dato
              </summary>
              <remarks>
-             Desencola con desencolar 
+             Desencola con desencolar
              </remarks>
         </member>
         <member name="M:PracticaDocFX.Facil.ColaSimple`1.VerPrimero">
@@ -595,7 +595,7 @@
         </member>
         <member name="P:PracticaDocFX.Intermedio.Pedido.Lineas">
             <summary>
-            
+            Muestra el estado del pedido
             </summary>
             <remarks>
             Hace que la propiedad no sea editable

@@ -1,0 +1,664 @@
+### YamlMime:ManagedReference
+items:
+- uid: PracticaDocFX.Intermedio.CompositeValidador`1
+  commentId: T:PracticaDocFX.Intermedio.CompositeValidador`1
+  id: CompositeValidador`1
+  parent: PracticaDocFX.Intermedio
+  children:
+  - PracticaDocFX.Intermedio.CompositeValidador`1.#ctor(PracticaDocFX.Intermedio.IValidador{`0}[])
+  - PracticaDocFX.Intermedio.CompositeValidador`1.#ctor(System.Collections.Generic.IEnumerable{PracticaDocFX.Intermedio.IValidador{`0}})
+  - PracticaDocFX.Intermedio.CompositeValidador`1.Validar(`0)
+  langs:
+  - csharp
+  - vb
+  name: CompositeValidador<T>
+  nameWithType: CompositeValidador<T>
+  fullName: PracticaDocFX.Intermedio.CompositeValidador<T>
+  type: Class
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: CompositeValidador
+    path: ../src/intermedio.cs
+    startLine: 274
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Enlista y valida los productos por medio de enumeracion logica
+  remarks: Hace que la clase no sea heredable y hace que sea generica usando el caracter T
+  example: []
+  syntax:
+    content: 'public sealed class CompositeValidador<T> : IValidador<T>'
+    typeParameters:
+    - id: T
+    content.vb: Public NotInheritable Class CompositeValidador(Of T) Implements IValidador(Of T)
+  inheritance:
+  - System.Object
+  implements:
+  - PracticaDocFX.Intermedio.IValidador{{T}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: CompositeValidador(Of T)
+  fullName.vb: PracticaDocFX.Intermedio.CompositeValidador(Of T)
+  name.vb: CompositeValidador(Of T)
+- uid: PracticaDocFX.Intermedio.CompositeValidador`1.#ctor(System.Collections.Generic.IEnumerable{PracticaDocFX.Intermedio.IValidador{`0}})
+  commentId: M:PracticaDocFX.Intermedio.CompositeValidador`1.#ctor(System.Collections.Generic.IEnumerable{PracticaDocFX.Intermedio.IValidador{`0}})
+  id: '#ctor(System.Collections.Generic.IEnumerable{PracticaDocFX.Intermedio.IValidador{`0}})'
+  parent: PracticaDocFX.Intermedio.CompositeValidador`1
+  langs:
+  - csharp
+  - vb
+  name: CompositeValidador(IEnumerable<IValidador<T>>)
+  nameWithType: CompositeValidador<T>.CompositeValidador(IEnumerable<IValidador<T>>)
+  fullName: PracticaDocFX.Intermedio.CompositeValidador<T>.CompositeValidador(System.Collections.Generic.IEnumerable<PracticaDocFX.Intermedio.IValidador<T>>)
+  type: Constructor
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: .ctor
+    path: ../src/intermedio.cs
+    startLine: 293
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Envia un mensaje al programador
+  remarks: En caso de que el valor sea nulo o en blanco se le envia un mensaje al programador
+  example: []
+  syntax:
+    content: public CompositeValidador(IEnumerable<IValidador<T>> validadores)
+    parameters:
+    - id: validadores
+      type: System.Collections.Generic.IEnumerable{PracticaDocFX.Intermedio.IValidador{{T}}}
+      description: Dan valor a los datos recibidos antes de enviarlos a la lista
+    content.vb: Public Sub New(validadores As IEnumerable(Of IValidador(Of T)))
+  overload: PracticaDocFX.Intermedio.CompositeValidador`1.#ctor*
+  nameWithType.vb: CompositeValidador(Of T).New(IEnumerable(Of IValidador(Of T)))
+  fullName.vb: PracticaDocFX.Intermedio.CompositeValidador(Of T).New(System.Collections.Generic.IEnumerable(Of PracticaDocFX.Intermedio.IValidador(Of T)))
+  name.vb: New(IEnumerable(Of IValidador(Of T)))
+- uid: PracticaDocFX.Intermedio.CompositeValidador`1.#ctor(PracticaDocFX.Intermedio.IValidador{`0}[])
+  commentId: M:PracticaDocFX.Intermedio.CompositeValidador`1.#ctor(PracticaDocFX.Intermedio.IValidador{`0}[])
+  id: '#ctor(PracticaDocFX.Intermedio.IValidador{`0}[])'
+  parent: PracticaDocFX.Intermedio.CompositeValidador`1
+  langs:
+  - csharp
+  - vb
+  name: CompositeValidador(params IValidador<T>[])
+  nameWithType: CompositeValidador<T>.CompositeValidador(params IValidador<T>[])
+  fullName: PracticaDocFX.Intermedio.CompositeValidador<T>.CompositeValidador(params PracticaDocFX.Intermedio.IValidador<T>[])
+  type: Constructor
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: .ctor
+    path: ../src/intermedio.cs
+    startLine: 310
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Es un constructor
+  remarks: Recibe reglas de validacion y evita que vengan con espacios en blanco
+  example: []
+  syntax:
+    content: public CompositeValidador(params IValidador<T>[] validadores)
+    parameters:
+    - id: validadores
+      type: PracticaDocFX.Intermedio.IValidador{{T}}[]
+      description: Lista de tamaño definido de interfaces de validador
+    content.vb: Public Sub New(ParamArray validadores As IValidador(Of T)())
+  overload: PracticaDocFX.Intermedio.CompositeValidador`1.#ctor*
+  nameWithType.vb: CompositeValidador(Of T).New(ParamArray IValidador(Of T)())
+  fullName.vb: PracticaDocFX.Intermedio.CompositeValidador(Of T).New(ParamArray PracticaDocFX.Intermedio.IValidador(Of T)())
+  name.vb: New(ParamArray IValidador(Of T)())
+- uid: PracticaDocFX.Intermedio.CompositeValidador`1.Validar(`0)
+  commentId: M:PracticaDocFX.Intermedio.CompositeValidador`1.Validar(`0)
+  id: Validar(`0)
+  parent: PracticaDocFX.Intermedio.CompositeValidador`1
+  langs:
+  - csharp
+  - vb
+  name: Validar(T)
+  nameWithType: CompositeValidador<T>.Validar(T)
+  fullName: PracticaDocFX.Intermedio.CompositeValidador<T>.Validar(T)
+  type: Method
+  source:
+    remote:
+      path: src/intermedio.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Validar
+    path: ../src/intermedio.cs
+    startLine: 324
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Intermedio
+  summary: Reporta los errores
+  remarks: Agarra los datos y entrega un reporte de errores al programador
+  example: []
+  syntax:
+    content: public ResultadoValidacion Validar(T valor)
+    parameters:
+    - id: valor
+      type: '{T}'
+      description: El entero numerico del resultado de la validación
+    return:
+      type: PracticaDocFX.Intermedio.ResultadoValidacion
+    content.vb: Public Function Validar(valor As T) As ResultadoValidacion
+  overload: PracticaDocFX.Intermedio.CompositeValidador`1.Validar*
+  implements:
+  - PracticaDocFX.Intermedio.IValidador{{T}}.Validar({T})
+  nameWithType.vb: CompositeValidador(Of T).Validar(T)
+  fullName.vb: PracticaDocFX.Intermedio.CompositeValidador(Of T).Validar(T)
+references:
+- uid: PracticaDocFX.Intermedio
+  commentId: N:PracticaDocFX.Intermedio
+  href: PracticaDocFX.html
+  name: PracticaDocFX.Intermedio
+  nameWithType: PracticaDocFX.Intermedio
+  fullName: PracticaDocFX.Intermedio
+  spec.csharp:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Intermedio
+    name: Intermedio
+    href: PracticaDocFX.Intermedio.html
+  spec.vb:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Intermedio
+    name: Intermedio
+    href: PracticaDocFX.Intermedio.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: PracticaDocFX.Intermedio.IValidador{{T}}
+  commentId: T:PracticaDocFX.Intermedio.IValidador{`0}
+  parent: PracticaDocFX.Intermedio
+  definition: PracticaDocFX.Intermedio.IValidador`1
+  href: PracticaDocFX.Intermedio.IValidador-1.html
+  name: IValidador<T>
+  nameWithType: IValidador<T>
+  fullName: PracticaDocFX.Intermedio.IValidador<T>
+  nameWithType.vb: IValidador(Of T)
+  fullName.vb: PracticaDocFX.Intermedio.IValidador(Of T)
+  name.vb: IValidador(Of T)
+  spec.csharp:
+  - uid: PracticaDocFX.Intermedio.IValidador`1
+    name: IValidador
+    href: PracticaDocFX.Intermedio.IValidador-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: PracticaDocFX.Intermedio.IValidador`1
+    name: IValidador
+    href: PracticaDocFX.Intermedio.IValidador-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PracticaDocFX.Intermedio.IValidador`1
+  commentId: T:PracticaDocFX.Intermedio.IValidador`1
+  href: PracticaDocFX.Intermedio.IValidador-1.html
+  name: IValidador<T>
+  nameWithType: IValidador<T>
+  fullName: PracticaDocFX.Intermedio.IValidador<T>
+  nameWithType.vb: IValidador(Of T)
+  fullName.vb: PracticaDocFX.Intermedio.IValidador(Of T)
+  name.vb: IValidador(Of T)
+  spec.csharp:
+  - uid: PracticaDocFX.Intermedio.IValidador`1
+    name: IValidador
+    href: PracticaDocFX.Intermedio.IValidador-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: PracticaDocFX.Intermedio.IValidador`1
+    name: IValidador
+    href: PracticaDocFX.Intermedio.IValidador-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: PracticaDocFX.Intermedio.CompositeValidador`1.#ctor*
+  commentId: Overload:PracticaDocFX.Intermedio.CompositeValidador`1.#ctor
+  href: PracticaDocFX.Intermedio.CompositeValidador-1.html#PracticaDocFX_Intermedio_CompositeValidador_1__ctor_System_Collections_Generic_IEnumerable_PracticaDocFX_Intermedio_IValidador__0___
+  name: CompositeValidador
+  nameWithType: CompositeValidador<T>.CompositeValidador
+  fullName: PracticaDocFX.Intermedio.CompositeValidador<T>.CompositeValidador
+  nameWithType.vb: CompositeValidador(Of T).New
+  fullName.vb: PracticaDocFX.Intermedio.CompositeValidador(Of T).New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{PracticaDocFX.Intermedio.IValidador{{T}}}
+  commentId: T:System.Collections.Generic.IEnumerable{PracticaDocFX.Intermedio.IValidador{`0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IValidador<T>>
+  nameWithType: IEnumerable<IValidador<T>>
+  fullName: System.Collections.Generic.IEnumerable<PracticaDocFX.Intermedio.IValidador<T>>
+  nameWithType.vb: IEnumerable(Of IValidador(Of T))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of PracticaDocFX.Intermedio.IValidador(Of T))
+  name.vb: IEnumerable(Of IValidador(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: PracticaDocFX.Intermedio.IValidador`1
+    name: IValidador
+    href: PracticaDocFX.Intermedio.IValidador-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PracticaDocFX.Intermedio.IValidador`1
+    name: IValidador
+    href: PracticaDocFX.Intermedio.IValidador-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: PracticaDocFX.Intermedio.IValidador{{T}}[]
+  isExternal: true
+  href: PracticaDocFX.Intermedio.IValidador-1.html
+  name: IValidador<T>[]
+  nameWithType: IValidador<T>[]
+  fullName: PracticaDocFX.Intermedio.IValidador<T>[]
+  nameWithType.vb: IValidador(Of T)()
+  fullName.vb: PracticaDocFX.Intermedio.IValidador(Of T)()
+  name.vb: IValidador(Of T)()
+  spec.csharp:
+  - uid: PracticaDocFX.Intermedio.IValidador`1
+    name: IValidador
+    href: PracticaDocFX.Intermedio.IValidador-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: PracticaDocFX.Intermedio.IValidador`1
+    name: IValidador
+    href: PracticaDocFX.Intermedio.IValidador-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: PracticaDocFX.Intermedio.CompositeValidador`1.Validar*
+  commentId: Overload:PracticaDocFX.Intermedio.CompositeValidador`1.Validar
+  href: PracticaDocFX.Intermedio.CompositeValidador-1.html#PracticaDocFX_Intermedio_CompositeValidador_1_Validar__0_
+  name: Validar
+  nameWithType: CompositeValidador<T>.Validar
+  fullName: PracticaDocFX.Intermedio.CompositeValidador<T>.Validar
+  nameWithType.vb: CompositeValidador(Of T).Validar
+  fullName.vb: PracticaDocFX.Intermedio.CompositeValidador(Of T).Validar
+- uid: PracticaDocFX.Intermedio.IValidador{{T}}.Validar({T})
+  commentId: M:PracticaDocFX.Intermedio.IValidador{`0}.Validar(`0)
+  parent: PracticaDocFX.Intermedio.IValidador{{T}}
+  definition: PracticaDocFX.Intermedio.IValidador`1.Validar(`0)
+  href: PracticaDocFX.Intermedio.IValidador-1.html#PracticaDocFX_Intermedio_IValidador_1_Validar__0_
+  name: Validar(T)
+  nameWithType: IValidador<T>.Validar(T)
+  fullName: PracticaDocFX.Intermedio.IValidador<T>.Validar(T)
+  nameWithType.vb: IValidador(Of T).Validar(T)
+  fullName.vb: PracticaDocFX.Intermedio.IValidador(Of T).Validar(T)
+  spec.csharp:
+  - uid: PracticaDocFX.Intermedio.IValidador{`0}.Validar(`0)
+    name: Validar
+    href: PracticaDocFX.Intermedio.IValidador-1.html#PracticaDocFX_Intermedio_IValidador_1_Validar__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: PracticaDocFX.Intermedio.IValidador{`0}.Validar(`0)
+    name: Validar
+    href: PracticaDocFX.Intermedio.IValidador-1.html#PracticaDocFX_Intermedio_IValidador_1_Validar__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: PracticaDocFX.Intermedio.ResultadoValidacion
+  commentId: T:PracticaDocFX.Intermedio.ResultadoValidacion
+  parent: PracticaDocFX.Intermedio
+  href: PracticaDocFX.Intermedio.ResultadoValidacion.html
+  name: ResultadoValidacion
+  nameWithType: ResultadoValidacion
+  fullName: PracticaDocFX.Intermedio.ResultadoValidacion
+- uid: PracticaDocFX.Intermedio.IValidador`1.Validar(`0)
+  commentId: M:PracticaDocFX.Intermedio.IValidador`1.Validar(`0)
+  href: PracticaDocFX.Intermedio.IValidador-1.html#PracticaDocFX_Intermedio_IValidador_1_Validar__0_
+  name: Validar(T)
+  nameWithType: IValidador<T>.Validar(T)
+  fullName: PracticaDocFX.Intermedio.IValidador<T>.Validar(T)
+  nameWithType.vb: IValidador(Of T).Validar(T)
+  fullName.vb: PracticaDocFX.Intermedio.IValidador(Of T).Validar(T)
+  spec.csharp:
+  - uid: PracticaDocFX.Intermedio.IValidador`1.Validar(`0)
+    name: Validar
+    href: PracticaDocFX.Intermedio.IValidador-1.html#PracticaDocFX_Intermedio_IValidador_1_Validar__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: PracticaDocFX.Intermedio.IValidador`1.Validar(`0)
+    name: Validar
+    href: PracticaDocFX.Intermedio.IValidador-1.html#PracticaDocFX_Intermedio_IValidador_1_Validar__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

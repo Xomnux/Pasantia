@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: PracticaDocFX.Avanzado.SeveridadLog
+  commentId: T:PracticaDocFX.Avanzado.SeveridadLog
+  id: SeveridadLog
+  parent: PracticaDocFX.Avanzado
+  children:
+  - PracticaDocFX.Avanzado.SeveridadLog.Advertencia
+  - PracticaDocFX.Avanzado.SeveridadLog.Critico
+  - PracticaDocFX.Avanzado.SeveridadLog.Depurar
+  - PracticaDocFX.Avanzado.SeveridadLog.Error
+  - PracticaDocFX.Avanzado.SeveridadLog.Informacion
+  - PracticaDocFX.Avanzado.SeveridadLog.Traza
+  langs:
+  - csharp
+  - vb
+  name: SeveridadLog
+  nameWithType: SeveridadLog
+  fullName: PracticaDocFX.Avanzado.SeveridadLog
+  type: Enum
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: SeveridadLog
+    path: ../src/avanzado.cs
+    startLine: 6
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: public enum SeveridadLog
+    content.vb: Public Enum SeveridadLog
+- uid: PracticaDocFX.Avanzado.SeveridadLog.Traza
+  commentId: F:PracticaDocFX.Avanzado.SeveridadLog.Traza
+  id: Traza
+  parent: PracticaDocFX.Avanzado.SeveridadLog
+  langs:
+  - csharp
+  - vb
+  name: Traza
+  nameWithType: SeveridadLog.Traza
+  fullName: PracticaDocFX.Avanzado.SeveridadLog.Traza
+  type: Field
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Traza
+    path: ../src/avanzado.cs
+    startLine: 8
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: Traza = 0
+    return:
+      type: PracticaDocFX.Avanzado.SeveridadLog
+- uid: PracticaDocFX.Avanzado.SeveridadLog.Depurar
+  commentId: F:PracticaDocFX.Avanzado.SeveridadLog.Depurar
+  id: Depurar
+  parent: PracticaDocFX.Avanzado.SeveridadLog
+  langs:
+  - csharp
+  - vb
+  name: Depurar
+  nameWithType: SeveridadLog.Depurar
+  fullName: PracticaDocFX.Avanzado.SeveridadLog.Depurar
+  type: Field
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Depurar
+    path: ../src/avanzado.cs
+    startLine: 9
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: Depurar = 1
+    return:
+      type: PracticaDocFX.Avanzado.SeveridadLog
+- uid: PracticaDocFX.Avanzado.SeveridadLog.Informacion
+  commentId: F:PracticaDocFX.Avanzado.SeveridadLog.Informacion
+  id: Informacion
+  parent: PracticaDocFX.Avanzado.SeveridadLog
+  langs:
+  - csharp
+  - vb
+  name: Informacion
+  nameWithType: SeveridadLog.Informacion
+  fullName: PracticaDocFX.Avanzado.SeveridadLog.Informacion
+  type: Field
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Informacion
+    path: ../src/avanzado.cs
+    startLine: 10
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: Informacion = 2
+    return:
+      type: PracticaDocFX.Avanzado.SeveridadLog
+- uid: PracticaDocFX.Avanzado.SeveridadLog.Advertencia
+  commentId: F:PracticaDocFX.Avanzado.SeveridadLog.Advertencia
+  id: Advertencia
+  parent: PracticaDocFX.Avanzado.SeveridadLog
+  langs:
+  - csharp
+  - vb
+  name: Advertencia
+  nameWithType: SeveridadLog.Advertencia
+  fullName: PracticaDocFX.Avanzado.SeveridadLog.Advertencia
+  type: Field
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Advertencia
+    path: ../src/avanzado.cs
+    startLine: 11
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: Advertencia = 3
+    return:
+      type: PracticaDocFX.Avanzado.SeveridadLog
+- uid: PracticaDocFX.Avanzado.SeveridadLog.Error
+  commentId: F:PracticaDocFX.Avanzado.SeveridadLog.Error
+  id: Error
+  parent: PracticaDocFX.Avanzado.SeveridadLog
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: SeveridadLog.Error
+  fullName: PracticaDocFX.Avanzado.SeveridadLog.Error
+  type: Field
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Error
+    path: ../src/avanzado.cs
+    startLine: 12
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: Error = 4
+    return:
+      type: PracticaDocFX.Avanzado.SeveridadLog
+- uid: PracticaDocFX.Avanzado.SeveridadLog.Critico
+  commentId: F:PracticaDocFX.Avanzado.SeveridadLog.Critico
+  id: Critico
+  parent: PracticaDocFX.Avanzado.SeveridadLog
+  langs:
+  - csharp
+  - vb
+  name: Critico
+  nameWithType: SeveridadLog.Critico
+  fullName: PracticaDocFX.Avanzado.SeveridadLog.Critico
+  type: Field
+  source:
+    remote:
+      path: src/avanzado.cs
+      branch: master
+      repo: https://github.com/Xomnux/Pasantia.git
+    id: Critico
+    path: ../src/avanzado.cs
+    startLine: 13
+  assemblies:
+  - Pasantia
+  namespace: PracticaDocFX.Avanzado
+  syntax:
+    content: Critico = 5
+    return:
+      type: PracticaDocFX.Avanzado.SeveridadLog
+references:
+- uid: PracticaDocFX.Avanzado
+  commentId: N:PracticaDocFX.Avanzado
+  href: PracticaDocFX.html
+  name: PracticaDocFX.Avanzado
+  nameWithType: PracticaDocFX.Avanzado
+  fullName: PracticaDocFX.Avanzado
+  spec.csharp:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Avanzado
+    name: Avanzado
+    href: PracticaDocFX.Avanzado.html
+  spec.vb:
+  - uid: PracticaDocFX
+    name: PracticaDocFX
+    href: PracticaDocFX.html
+  - name: .
+  - uid: PracticaDocFX.Avanzado
+    name: Avanzado
+    href: PracticaDocFX.Avanzado.html
+- uid: PracticaDocFX.Avanzado.SeveridadLog
+  commentId: T:PracticaDocFX.Avanzado.SeveridadLog
+  parent: PracticaDocFX.Avanzado
+  href: PracticaDocFX.Avanzado.SeveridadLog.html
+  name: SeveridadLog
+  nameWithType: SeveridadLog
+  fullName: PracticaDocFX.Avanzado.SeveridadLog

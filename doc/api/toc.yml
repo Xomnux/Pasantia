@@ -1,0 +1,126 @@
+### YamlMime:TableOfContent
+items:
+- uid: PracticaDocFX.Avanzado
+  name: PracticaDocFX.Avanzado
+  type: Namespace
+  items:
+  - uid: PracticaDocFX.Avanzado.ContextoFlujo
+    name: ContextoFlujo
+    type: Class
+  - uid: PracticaDocFX.Avanzado.DemoAvanzado
+    name: DemoAvanzado
+    type: Class
+  - uid: PracticaDocFX.Avanzado.Dinero
+    name: Dinero
+    type: Struct
+  - uid: PracticaDocFX.Avanzado.EstadoTransaccion
+    name: EstadoTransaccion
+    type: Enum
+  - uid: PracticaDocFX.Avanzado.HoraSistema
+    name: HoraSistema
+    type: Class
+  - uid: PracticaDocFX.Avanzado.IProveedorHora
+    name: IProveedorHora
+    type: Interface
+  - uid: PracticaDocFX.Avanzado.IPuertaPago
+    name: IPuertaPago
+    type: Interface
+  - uid: PracticaDocFX.Avanzado.IRegistradorLog
+    name: IRegistradorLog
+    type: Interface
+  - uid: PracticaDocFX.Avanzado.IRepositorioPedidos
+    name: IRepositorioPedidos
+    type: Interface
+  - uid: PracticaDocFX.Avanzado.Identificador
+    name: Identificador
+    type: Class
+  - uid: PracticaDocFX.Avanzado.MotorFlujos
+    name: MotorFlujos
+    type: Class
+  - uid: PracticaDocFX.Avanzado.PedidoAgregado
+    name: PedidoAgregado
+    type: Class
+  - uid: PracticaDocFX.Avanzado.PedidoLinea
+    name: PedidoLinea
+    type: Class
+  - uid: PracticaDocFX.Avanzado.PuertaPagoIdempotenteEnMemoria
+    name: PuertaPagoIdempotenteEnMemoria
+    type: Class
+  - uid: PracticaDocFX.Avanzado.RegistradorLogEnMemoria
+    name: RegistradorLogEnMemoria
+    type: Class
+  - uid: PracticaDocFX.Avanzado.RegistroLog
+    name: RegistroLog
+    type: Class
+  - uid: PracticaDocFX.Avanzado.RepositorioPedidosEnMemoria
+    name: RepositorioPedidosEnMemoria
+    type: Class
+  - uid: PracticaDocFX.Avanzado.ResultadoOperacion
+    name: ResultadoOperacion
+    type: Class
+  - uid: PracticaDocFX.Avanzado.ServicioPago
+    name: ServicioPago
+    type: Class
+  - uid: PracticaDocFX.Avanzado.SeveridadLog
+    name: SeveridadLog
+    type: Enum
+- uid: PracticaDocFX.Facil
+  name: PracticaDocFX.Facil
+  type: Namespace
+  items:
+  - uid: PracticaDocFX.Facil.ColaSimple`1
+    name: ColaSimple<T>
+    type: Class
+  - uid: PracticaDocFX.Facil.Contador
+    name: Contador
+    type: Class
+  - uid: PracticaDocFX.Facil.EtiquetaTexto
+    name: EtiquetaTexto
+    type: Class
+  - uid: PracticaDocFX.Facil.NivelAccion
+    name: NivelAccion
+    type: Enum
+  - uid: PracticaDocFX.Facil.UtilidadesBasicas
+    name: UtilidadesBasicas
+    type: Class
+- uid: PracticaDocFX.Intermedio
+  name: PracticaDocFX.Intermedio
+  type: Namespace
+  items:
+  - uid: PracticaDocFX.Intermedio.CompositeValidador`1
+    name: CompositeValidador<T>
+    type: Class
+  - uid: PracticaDocFX.Intermedio.DemoIntermedio
+    name: DemoIntermedio
+    type: Class
+  - uid: PracticaDocFX.Intermedio.ErrorValidacion
+    name: ErrorValidacion
+    type: Class
+  - uid: PracticaDocFX.Intermedio.EstadoPedido
+    name: EstadoPedido
+    type: Enum
+  - uid: PracticaDocFX.Intermedio.IValidador`1
+    name: IValidador<T>
+    type: Interface
+  - uid: PracticaDocFX.Intermedio.LineaPedido
+    name: LineaPedido
+    type: Class
+  - uid: PracticaDocFX.Intermedio.Pedido
+    name: Pedido
+    type: Class
+  - uid: PracticaDocFX.Intermedio.Producto
+    name: Producto
+    type: Class
+  - uid: PracticaDocFX.Intermedio.RepositorioPedidosEnMemoria
+    name: RepositorioPedidosEnMemoria
+    type: Class
+  - uid: PracticaDocFX.Intermedio.ResultadoValidacion
+    name: ResultadoValidacion
+    type: Class
+  - uid: PracticaDocFX.Intermedio.ValidadorNoNulo`1
+    name: ValidadorNoNulo<T>
+    type: Class
+  - uid: PracticaDocFX.Intermedio.ValidadorRango
+    name: ValidadorRango
+    type: Class
+memberLayout: SamePage
