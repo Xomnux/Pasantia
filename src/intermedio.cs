@@ -306,7 +306,7 @@ namespace PracticaDocFX.Intermedio
         /// Lista de tamaño definido de interfaces de validador 
         /// </param>
         /// <value>
-        /// 
+        /// Vale como constructor y borrador de espacios en blanco
         /// </value>
         public CompositeValidador(params IValidador<T>[] validadores)
         {
@@ -370,6 +370,9 @@ namespace PracticaDocFX.Intermedio
         /// <param name="precio">
         /// Numero que representa el precio del producto
         /// </param>
+        /// <value>
+        /// Es el valor del producto
+        /// </value>
         public Producto(string codigo, string nombre, decimal precio)
         {
             if (string.IsNullOrWhiteSpace(codigo))
@@ -385,7 +388,7 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// Sella una clase con sealed
+    /// 
     /// </summary>
     /// <remarks>
     /// Sella la clase LineaPedido y permite que sea leida por cualquier persona haciendola publica
