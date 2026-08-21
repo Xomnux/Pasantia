@@ -51,6 +51,9 @@ namespace PracticaDocFX.Intermedio
         /// <param name="mensaje">
         /// Cadena que representa al mensaje
         /// </param>
+        /// <value>
+        /// Representa la correccion de errores de validacion
+        /// </value>
         public ErrorValidacion(string codigo, string mensaje, string? campo = null)
         {
             if (string.IsNullOrWhiteSpace(codigo))
@@ -67,7 +70,7 @@ namespace PracticaDocFX.Intermedio
         /// Brinda el resultado de la validacion
         /// </summary>
         /// <remarks>
-        /// 
+        /// No es heredable
         /// </remarks>
     public sealed class ResultadoValidacion
     {
@@ -79,7 +82,7 @@ namespace PracticaDocFX.Intermedio
         /// </remarks>
         public IReadOnlyList<ErrorValidacion> Errores { get; }
         /// <summary>
-        /// Revisa si hay errores
+        /// Revisa si hay errores de Validacion
         /// </summary>
         /// <remarks>
         /// Con la variable booleana Valido se determina si hay errores por medio del true or false
@@ -89,11 +92,14 @@ namespace PracticaDocFX.Intermedio
         /// Usa una lista de errores ya hecha
         /// </summary>
         /// <remarks>
-        /// Envia lo que se considereun error a la lista de errores ya establecida
+        /// Envia lo que se considere un error a la lista de errores ya establecida
         /// </remarks>
         /// <param name="errores">
         /// Guarda errores en la propiedad 
         /// </param>
+        /// <value>
+        /// Representa lo que es ser un identificador de errores
+        /// </value>
         private ResultadoValidacion(List<ErrorValidacion> errores)
         {
             Errores = errores;
@@ -163,6 +169,9 @@ namespace PracticaDocFX.Intermedio
         /// <param name="nombreCampo">
         /// Corresponde al nombramiento del espacio
         /// </param>
+        /// <value>
+        /// Representa el constructor de la clase
+        /// </value>
         public ValidadorNoNulo(string nombreCampo)
         {
             if (string.IsNullOrWhiteSpace(nombreCampo))
@@ -258,7 +267,7 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// Sella la clase CompositeValidador y la hace generica 
+    /// Enlista y valida los productos por medio de enumeracion logica
     /// </summary>
     /// <remarks>
     /// Hace que la clase no sea heredable y hace que sea generica usando el caracter T
@@ -296,6 +305,9 @@ namespace PracticaDocFX.Intermedio
         /// <param name="validadores">
         /// Lista de tamaño definido de interfaces de validador 
         /// </param>
+        /// <value>
+        /// 
+        /// </value>
         public CompositeValidador(params IValidador<T>[] validadores)
         {
             if (validadores is null) throw new ArgumentNullException(nameof(validadores));
@@ -402,6 +414,12 @@ namespace PracticaDocFX.Intermedio
         /// <remarks>
         /// Como condicional en caso de que el producto sea menor a 1 no sera permitido, y se enviara un mensaje para que sea mayor a 1.
         /// </remarks>
+        /// <param name="producto">
+        /// Corresponde al tipo de producto
+        /// </param>
+        /// <param name="cantidad">
+        /// Es la cantidad del mismo producto, debe ser mayor o igual que 1
+        /// </param>
         public LineaPedido(Producto producto, int cantidad)
         {
             Producto = producto ?? throw new ArgumentNullException(nameof(producto));
@@ -420,7 +438,7 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// Publica y sella la clase Pedido
+    /// Corresponde al Pedido del cliente en lista, estado, informacion y fecha de pago y creacion
     /// </summary>
     /// <remarks>
     /// Usa public y sealed para sellar la clase
@@ -453,7 +471,7 @@ namespace PracticaDocFX.Intermedio
         public EstadoPedido Estado { get; private set; }
 
         /// <summary>
-        /// Hace que LineaPedido solo se pueda leer
+        /// 
         /// </summary>
         /// <remarks>
         /// Hace que la propiedad no sea editable
@@ -481,6 +499,15 @@ namespace PracticaDocFX.Intermedio
         /// <remarks>
         /// Obliga a las variables estar llenas y correctas y elimina espacios en blanco 
         /// </remarks>
+        /// <param name="clienteId">
+        /// Es la identificacion del cliente en cadena
+        /// </param>
+        /// <param name="fechaCreacionUtc">
+        /// Corresponde a la fecha exacta de la creacion del pedido
+        /// </param>
+        /// <param name="id">
+        /// Es la identificacion del pedido en cadena
+        /// </param>
         public Pedido(string id, string clienteId, DateTime fechaCreacionUtc)
         {
             if (string.IsNullOrWhiteSpace(id))
@@ -494,13 +521,13 @@ namespace PracticaDocFX.Intermedio
             Estado = EstadoPedido.Creado;
         }
         /// <summary>
-        /// 
+        /// Significa que solo se creara la factura una vez el pedido haya sido creado
         /// </summary>
         /// <remarks>
-        /// 
+        /// Usa condicionales y decide que en caso de que el pedido no este creado no se enviara ninguna linea en las lista de facturacion
         /// </remarks>
         /// <param name="linea">
-        /// 
+        /// Corresponde a la linea individual por producto en la factura
         /// </param>
         public void AgregarLinea(LineaPedido linea)
         {
@@ -511,6 +538,12 @@ namespace PracticaDocFX.Intermedio
             _lineas.Add(linea);
         }
 
+        /// <summary> 
+        /// Pasa el valor Total a numero entero con decimal y devuelve mensaje en caso de que no haya un pedido
+        /// </summary>
+        /// <remarks>
+        /// Convierte el total en un numero con decimales y devuelve un mensaje en caso de que el pedido no tenga objetos aun
+        /// </remarks>
         public decimal Total()
         {
             if (_lineas.Count == 0)
@@ -518,7 +551,12 @@ namespace PracticaDocFX.Intermedio
 
             return _lineas.Sum(l => l.TotalLinea());
         }
-
+        /// <summary>
+        /// Define el estado de cobro del Pedido
+        /// </summary>
+        /// <remarks>
+        /// Solo se puede cobrar el pedido una vez este creado, se guarda el estado de cobro del pedido y su fecha de creacion.
+        /// </remarks>
         public void MarcarPagado()
         {
             if (Estado != EstadoPedido.Creado)
@@ -527,7 +565,12 @@ namespace PracticaDocFX.Intermedio
             Estado = EstadoPedido.Pagado;
             FechaPagoUtc = DateTime.UtcNow;
         }
-
+        /// <summary>
+        /// Evita que un pedido pagado sea cancelado.
+        /// </summary>
+        /// <remarks>
+        /// En caso de que un pedido actualmente pagado sea cancelado, no se podra cancelar
+        /// </remarks>
         public void Cancelar()
         {
             if (Estado == EstadoPedido.Cancelado) return;
@@ -539,15 +582,33 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// 
+    /// Base de datos de los Pedidos
     /// </summary>
     /// <remarks>
-    /// 
+    /// Guarda y recuerda los pedidos
     /// </remarks>
     public sealed class RepositorioPedidosEnMemoria
     {
+        /// <summary>
+        /// Guarda los pedidos por nombre en cadena
+        /// </summary>
+        /// <remarks>
+        /// Diccionario que guarda los nombres de los pedidos en orden respecto a su cadena de nombre
+        /// </remarks>
+        /// <value>
+        /// Diccionario de cadenas y pedidos
+        /// </value>
         private readonly Dictionary<string, Pedido> _almacen = new Dictionary<string, Pedido>(StringComparer.Ordinal);
 
+        /// <summary>
+        /// Pide el id del pedido
+        /// </summary>
+        /// <remarks>
+        /// Hace que la identificacion de los pedidos sea por medio del id unico de cada pedido
+        /// </remarks>
+        /// <param name="id">
+        /// Corresponde a la cadena de identificacion del pedido 
+        /// </param>
         public Pedido? ObtenerPorId(string id)
         {
             if (string.IsNullOrWhiteSpace(id))
@@ -556,7 +617,15 @@ namespace PracticaDocFX.Intermedio
             _almacen.TryGetValue(id.Trim(), out var pedido);
             return pedido;
         }
-
+        /// <summary>
+        /// Guarda los pedidos
+        /// </summary>
+        /// <remarks>
+        /// Guarda los pedidos y los envia al almacen (diccionario)
+        /// </remarks>
+        /// <param name="pedido">
+        /// Corresponde al pedido guardado
+        /// </param>
         public void Guardar(Pedido pedido)
         {
             if (pedido is null) throw new ArgumentNullException(nameof(pedido));
@@ -564,13 +633,19 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// 
+    /// Clase que prueba el archivo intermedio
     /// </summary>
     /// <remarks>
-    /// 
+    /// Prueba de validacion en el archivo intermedio
     /// </remarks>
     public static class DemoIntermedio
     {
+        /// <summary>
+        /// Prueba las validaciones
+        /// </summary>
+        /// <remarks>
+        /// Obtiene los productos ylos valida antes de enviarlos al diccionario
+        /// </remarks>
         public static ResultadoValidacion ProbarValidaciones()
         {
             var producto = new Producto("A1", "Auriculares", 50m);
