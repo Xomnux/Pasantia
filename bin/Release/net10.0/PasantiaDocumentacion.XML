@@ -14,7 +14,7 @@
         </member>
         <member name="T:PracticaDocFX.Facil.EtiquetaTexto">
             <summary>
-             establece que en la etiqueta del texto no puede ir espacio en blanco
+             Establece que en la etiqueta del texto no puede ir espacio en blanco
             </summary>
             <remarks>
             Cada texto no puede ser de valor nulo
@@ -22,10 +22,18 @@
         </member>
         <member name="P:PracticaDocFX.Facil.EtiquetaTexto.Texto">
             <summary>
-             Obtiene el texto y el prefijo
+             Obtiene el texto
             </summary>
             <remarks>
-             toma la disposicion del texto y el prefijo
+             Toma la disposicion del texto
+            </remarks>
+        </member>
+        <member name="P:PracticaDocFX.Facil.EtiquetaTexto.Prefijo">
+            <summary>
+             Obtiene el prefijo
+            </summary>
+            <remarks>
+             Toma la disposicion del prefijo
             </remarks>
         </member>
         <member name="M:PracticaDocFX.Facil.EtiquetaTexto.#ctor(System.String,System.String)">
@@ -33,12 +41,21 @@
              Pide el texto y el prefijo
             </summary>
             <remarks>
-             pide y define el lugar del texto y prefijo
+             Pide y define el lugar del texto y prefijo
             </remarks>
+             <param name="prefijo">
+             Corresponde al prefijo de la etiqueta
+             </param>
+             <param name="texto">
+             Corresponde al texto de la etiqueta
+             </param>
+             <value>
+             Representa la etiqueta del texto
+             </value>
         </member>
         <member name="M:PracticaDocFX.Facil.EtiquetaTexto.ObtenerEtiqueta">
             <summary>
-             obtiene las etiquetas
+             Obtiene las etiquetas
             </summary>
             <remarks>
              Obtiene las etiquetas devolviendo prefijo y texto
@@ -46,18 +63,18 @@
         </member>
         <member name="M:PracticaDocFX.Facil.EtiquetaTexto.ToString">
             <summary>
-            sobreescribe
+            Sobreescribe
             </summary>
             <remarks>
-            sobreescribe el texto de cadena
+            Sobreescribe el texto de cadena
             </remarks>
         </member>
         <member name="T:PracticaDocFX.Facil.Contador">
             <summary>
-             aumenta o disminuye el valor inicial de la variable
+             Aumenta o disminuye el valor inicial de la variable
             </summary>
             <remarks>
-             puede tomar y aumentar o disminuir un valor 
+             Puede tomar y aumentar o disminuir un valor 
             </remarks>
         </member>
         <member name="P:PracticaDocFX.Facil.Contador.Valor">
@@ -65,20 +82,23 @@
             Usa atributos como Public y Private
             </summary>
             <remark>
-            cambia los atributos de las variables
+            Cambia los atributos de las variables
             </remark>
         </member>
         <member name="M:PracticaDocFX.Facil.Contador.#ctor(System.Int32)">
              <summary>
-             es para inicializar el constructor
+             Es para inicializar el constructor
              </summary>
             <remarks>
-             hace que el constructor arrance desde 0
+             Hace que el constructor arrance desde 0
              </remarks>
+             <param name="valorInicial">
+             Corresponde al valor inicial en el contador (0)
+             </param>
         </member>
         <member name="M:PracticaDocFX.Facil.Contador.Incrementar">
             <summary>
-            establece el atributo de la variables Incrementar
+            Establece el atributo de la variables Incrementar
             </summary>
             <remarks>
             Hace que la funcion de la variable sea la de sumar al valor
@@ -99,30 +119,45 @@
              <remarks>
              Usa una variable de valor 0 para asi convertir a la variable de Valor en un 0
              </remarks>
+             <param name="valorInicial">
+             Corresponde al valor inicial (0) en caso de que se reinicie el contador
+             </param>
         </member>
         <member name="T:PracticaDocFX.Facil.UtilidadesBasicas">
             <summary>
             Devuelve valores no deseados
             </summary>
             <remarks>
-            devuelve el valor en caso de que no sea par y Si el valor no es suficiente tira una variable nueva y envia una advertencia de cambio
+            Devuelve el valor en caso de que no sea par y Si el valor no es suficiente tira una variable nueva y envia una advertencia de cambio
             </remarks>
         </member>
         <member name="M:PracticaDocFX.Facil.UtilidadesBasicas.EsPar(System.Int32)">
             <summary>
-            devuelve el numero a ser par
+            Devuelve el numero a ser par
             </summary>
             <remarks>
-            bota el residuo de la division
+            Bota el residuo de la division
             </remarks>
+            <param name="numero">
+            Equivale al numero residuo de la division
+            </param>
         </member>
         <member name="M:PracticaDocFX.Facil.UtilidadesBasicas.Limitar(System.Int32,System.Int32,System.Int32)">
             <summary>
-            se asegura de que el valor maximo sea mayor al valor minimo
+            Se asegura de que el valor maximo sea mayor al valor minimo
             </summary>
             <remarks>
-            usa condicionales y en caso de que no se cumplan enviara un mensaje de advertencia
+            Usa condicionales y en caso de que no se cumplan enviara un mensaje de advertencia
             </remarks>
+            <param name="maximo">
+            Equivale al rango maximo
+            </param>
+            <param name="minimo">
+            Equivale al rango minimo
+            </param>
+            <param name="valor">
+            Equivale al valor del numero 
+            </param>
         </member>
         <member name="M:PracticaDocFX.Facil.UtilidadesBasicas.Suma(System.Int32[])">
             <summary>
@@ -131,10 +166,13 @@
             <remarks>
             Usa la funcion de calculo de suma para sumar enteros
             </remarks>
+            <param name="valores">
+            Equivale a un conjunto de enteros
+            </param>
         </member>
         <member name="T:PracticaDocFX.Facil.ColaSimple`1">
             <summary>
-            enfila y desenfila los valores
+            Enfila y desenfila los valores
             </summary>
             <remarks>
             Pone en cola (fila) las variables y tambien las desencola, en caso de que no haya un valor, se envia un mensaje
@@ -145,31 +183,37 @@
             Crea una cola de numeros no sobreescribibles
             </summary>
             <remarks>
-            usa comando de configuracion de colas
+            Usa comando de configuracion de colas
             </remarks>
+            <value>
+            Representa la fila de cantidades de numeros
+            </value>
         </member>
         <member name="P:PracticaDocFX.Facil.ColaSimple`1.Cantidad">
             <summary>
-            envia la cantidad del numero a la cola
+            Envia la cantidad del numero a la cola
             </summary>
             <remarks>
-            usa la variable de cantidad para enviarla a la cola de valores
+            Usa la variable de cantidad para enviarla a la cola de valores
             </remarks>
         </member>
         <member name="M:PracticaDocFX.Facil.ColaSimple`1.Encolar(`0)">
             <summary>
-            encola las variables de numero entero
+            Encola las variables de numero entero
             </summary>
             <remarks>
-            usa el comando de encolar para manipular los numeros enteros
+            Usa el comando de encolar para manipular los numeros enteros
             </remarks>
+            <param name="elemento">
+            Corresponde al elemento que va en la cola
+            </param>
         </member>
         <member name="M:PracticaDocFX.Facil.ColaSimple`1.Desencolar">
             <summary>
-             desencola los numeros enteros
+             Desencola los numeros enteros
              </summary>
              <remarks>
-             desencola con desencolar 
+             Desencola con desencolar 
              </remarks>
         </member>
         <member name="M:PracticaDocFX.Facil.ColaSimple`1.VerPrimero">
@@ -177,7 +221,7 @@
             Envia un mensaje si la cola esta vacia y si tiene regresa el primero
             </summary>
             <remarks>
-            usa comandos de excepcion y retorno
+            Usa comandos de excepcion y retorno
             </remarks>
         </member>
         <member name="T:PracticaDocFX.Intermedio.EstadoPedido">
@@ -185,16 +229,15 @@
             Su funcion es mostrar el estado del pedido del cliente
             </summary>
             <remarks>
-            usa elementos como Public para que sea visible para todos y Enum para crear la lista de funciones (Creado, pagado y cancelado) 
+            Usa elementos como Public para que sea visible para todos y Enum para crear la lista de funciones (Creado, pagado y cancelado) 
             </remarks>
         </member>
         <member name="T:PracticaDocFX.Intermedio.ErrorValidacion">
-            convierte espacios como el codigo, mensaje y campo en algo visible y obliga a llenar los espacios
             <summary>
-            funciona como un sellador de clases
+            Obtiene y muestra valores, tambien rechaza espacios en blanco y envia mensajes de correccion en caso de no cumplis con las excepciones 
             </summary>
             <remarks>
-            la palabra Sealed (Sellado) sella la clase y evita que se pueda volver a usar 
+            La palabra Sealed (Sellado) sella la clase y evita que se pueda volver a usar 
             </remarks>
         </member>
         <member name="P:PracticaDocFX.Intermedio.ErrorValidacion.Codigo">
@@ -222,64 +265,70 @@
             <param name="mensaje">
             Cadena que representa al mensaje
             </param>
+            <value>
+            Representa la correccion de errores de validacion
+            </value>
         </member>
         <member name="T:PracticaDocFX.Intermedio.ResultadoValidacion">
             <summary>
              Brinda el resultado de la validacion
              </summary>
              <remarks>
-             
+             No es heredable
              </remarks>
         </member>
         <member name="P:PracticaDocFX.Intermedio.ResultadoValidacion.Errores">
             <summary>
-            crea una lista no sobreescribible
+            Crea una lista no sobreescribible
             </summary>
             <remarks>
-            usa el ReadOnly y get; para crear texto solamente visible pero no editable.
+            Usa el ReadOnly y get; para crear texto solamente visible pero no editable.
             </remarks>
         </member>
         <member name="P:PracticaDocFX.Intermedio.ResultadoValidacion.Valido">
             <summary>
-            revisa si hay errores
+            Revisa si hay errores de Validacion
             </summary>
             <remarks>
-            con la variable booleana Valido se determina si hay errores por medio del true or false
+            Con la variable booleana Valido se determina si hay errores por medio del true or false
             </remarks>
         </member>
         <member name="M:PracticaDocFX.Intermedio.ResultadoValidacion.#ctor(System.Collections.Generic.List{PracticaDocFX.Intermedio.ErrorValidacion})">
             <summary>
-            usa una lista de errores ya hecha
+            Usa una lista de errores ya hecha
             </summary>
             <remarks>
-            envia lo que se considereun error a la lista de errores ya establecida
+            Envia lo que se considere un error a la lista de errores ya establecida
             </remarks>
             <param name="errores">
             Guarda errores en la propiedad 
             </param>
+            <value>
+            Representa lo que es ser un identificador de errores
+            </value>
         </member>
         <member name="M:PracticaDocFX.Intermedio.ResultadoValidacion.Correcto">
             <summary>
-            crea una nueva lista de validacion
+            Crea una nueva lista de validacion
             </summary>
             <remarks>
-            crea una lista  para guardar datos de forma privada
+            Crea una lista  para guardar datos de forma privada
             </remarks>
         </member>
         <member name="M:PracticaDocFX.Intermedio.ResultadoValidacion.ConErrores(System.Collections.Generic.IEnumerable{PracticaDocFX.Intermedio.ErrorValidacion})">
             <summary>
-            crea una lista de errores
+            Crea una lista de errores
             </summary>
             <remarks>
-            identifica y enlista los errores cometidos por el usuario
+            Identifica y enlista los errores cometidos por el usuario
             </remarks>
         </member>
         <member name="T:PracticaDocFX.Intermedio.IValidador`1">
             <summary>
-            permite tener validaciones para productos, usuarios, etc
+            Permite tener validaciones para productos, usuarios, etc
             </summary>
             <remarks>
-            es una interfaz con reglas
+            Es una interfaz con reglas
             </remarks>
         </member>
         <member name="M:PracticaDocFX.Intermedio.IValidador`1.Validar(`0)">
@@ -291,12 +340,11 @@
              </param>
         </member>
         <member name="T:PracticaDocFX.Intermedio.ValidadorNoNulo`1">
-            Evita que el espacio del campo este vacio
             <summary>
-            evita que no hayan datos con valores nulos
+            Evita que no hayan datos con valores nulos
             </summary>
             <remarks>
-            se encarga de que los valores de los datos no tengan espacios o sean nulos
+            Se encarga de que los valores de los datos no tengan espacios o sean nulos
             </remarks>
         </member>
         <member name="F:PracticaDocFX.Intermedio.ValidadorNoNulo`1._nombreCampo">
@@ -304,16 +352,22 @@
             Es la variabilidad del nombre del valor durante su validacion
             </summary>
             <remarks>
-            privatiza el ReadOnly y valida nombres de valores
+            Privatiza el ReadOnly y valida nombres de valores
             </remarks>
         </member>
         <member name="M:PracticaDocFX.Intermedio.ValidadorNoNulo`1.#ctor(System.String)">
             <summary>
-            evita que el campo del nombre del valor este en blanco
+            Evita que el campo del nombre del valor este en blanco
             </summary>
             <remarks>
-            usa excepciones, nombres en cadena y nameof para evitar errores de compilacion.
+            Usa excepciones, nombres en cadena y nameof para evitar errores de compilacion.
             </remarks>
+            <param name="nombreCampo">
+            Corresponde al nombramiento del espacio
+            </param>
+            <value>
+            Representa el constructor de la clase
+            </value>
         </member>
         <member name="M:PracticaDocFX.Intermedio.ValidadorNoNulo`1.Validar(`0)">
             <summary>
@@ -322,13 +376,16 @@
             <remarks>
             En caso de que el valor recibido sea nulo, se envia un mensaje para que el nombre sea corregido y llenado
             </remarks>
+            <param name="valor">
+            Es el valor que se le da al nombre del campo, no puede ser nulo
+            </param>
         </member>
         <member name="T:PracticaDocFX.Intermedio.ValidadorRango">
             <summary>
-            sella una clase
+            Establece un  rango minimo y maximo que no puede ser excedido, ademas establece que su espacio debe ser sin espacios en blanco
             </summary>
             <remarks>
-            sella la clase ValidadorRango
+            Establece valores como enteros dobles y exige que no se dejen en blanco
             </remarks>
         </member>
         <member name="P:PracticaDocFX.Intermedio.ValidadorRango.Minimo">
@@ -341,25 +398,37 @@
         </member>
         <member name="M:PracticaDocFX.Intermedio.ValidadorRango.#ctor(System.Double,System.Double)">
             <summary>
-            establece un  limite minimo para el valor de la variable Minimo
+            Establece un  limite minimo para el valor de la variable Minimo
             </summary>
             <remarks>
             Evita que el valor Minimo sea mayor al maximo con excepciones y condicionales
             </remarks>
+            <param name="maximo">
+            Es el rango maximo posible que puede tener el valor, debe ser mayor al minimo.
+            </param>
+            <param name="minimo">
+            Es el rango minimo posible que puede tener el valor, debe ser menor al maximo.
+            </param>
         </member>
         <member name="M:PracticaDocFX.Intermedio.ValidadorRango.Validar(System.Double,System.String)">
             <summary>
             Evita que la cadena de campo sea un espacio en blanco
-            evita que el valor Minimo y Maximo se salgan de su rango
+            Evita que el valor Minimo y Maximo se salgan de su rango
             </summary>
             <remarks>
             Usa una condicional y una excepcion para evitar espacios en blanco
             En casode que los valores Minimo y Maximo excendan su limite, devolvera el valor y enviara un mensaje de correccion.
             </remarks>
+            <param name="campo">
+            Cadena que corresponde al campo
+            </param>
+            <param name="valor">
+            Doble que corresponde al valor
+            </param>
         </member>
         <member name="T:PracticaDocFX.Intermedio.CompositeValidador`1">
             <summary>
-            sella la clase CompositeValidador y la hace generica 
+            Enlista y valida los productos por medio de enumeracion logica
             </summary>
             <remarks>
             Hace que la clase no sea heredable y hace que sea generica usando el caracter T
@@ -375,10 +444,10 @@
         </member>
         <member name="M:PracticaDocFX.Intermedio.CompositeValidador`1.#ctor(System.Collections.Generic.IEnumerable{PracticaDocFX.Intermedio.IValidador{`0}})">
             <summary>
-            envia un mensaje al programador
+            Envia un mensaje al programador
             </summary>
             <remarks>
-            en caso de que el valor sea nulo o en blanco se le envia un mensaje al programador
+            En caso de que el valor sea nulo o en blanco se le envia un mensaje al programador
             </remarks>
             <param name="validadores">
             Dan valor a los datos recibidos antes de enviarlos a la lista
@@ -386,18 +455,24 @@
         </member>
         <member name="M:PracticaDocFX.Intermedio.CompositeValidador`1.#ctor(PracticaDocFX.Intermedio.IValidador{`0}[])">
             <summary>
-            es un constructor
+            Es un constructor
             </summary>
             <remarks>
-            recibe reglas de validacion y evita que vengan con espacios en blanco 
+            Recibe reglas de validacion y evita que vengan con espacios en blanco 
             </remarks>
+            <param name="validadores">
+            Lista de tamaño definido de interfaces de validador 
+            </param>
+            <value>
+            Vale como constructor y borrador de espacios en blanco
+            </value>
         </member>
         <member name="M:PracticaDocFX.Intermedio.CompositeValidador`1.Validar(`0)">
             <summary>
-            reporta los errores
+            Reporta los errores
             </summary>
             <remarks>
-            agarra los datos y entrega un reporte de errores al programador
+            Agarra los datos y entrega un reporte de errores al programador
             </remarks>
             <param name="valor">
             El entero numerico del resultado de la validación
@@ -405,7 +480,7 @@
         </member>
         <member name="T:PracticaDocFX.Intermedio.Producto">
             <summary>
-            sella la clase Producto
+            Sella la clase Producto
             </summary>
             <remarks>
             Usa sealed para sellar una clase y hacerla no heredable
@@ -413,15 +488,15 @@
         </member>
         <member name="P:PracticaDocFX.Intermedio.Producto.Codigo">
             <summary>
-            atributa las propiedades Codigo, Nombre y Precio
+            Atributa las propiedades Codigo, Nombre y Precio
             </summary>
             <remarks>
-            permite leer el valor de las propiedades con { get; }
+            Permite leer el valor de las propiedades con { get; }
             </remarks>
         </member>
         <member name="M:PracticaDocFX.Intermedio.Producto.#ctor(System.String,System.String,System.Decimal)">
             <summary>
-            evita que los espacios en los que deban ir las propiedades esten vacios o de otro modo, tengan espacios blancos
+            Evita que los espacios en los que deban ir las propiedades esten vacios o de otro modo, tengan espacios blancos
             </summary>
             <remarks>
             Usa herramientas como Trim y usa excepciones, tambien evita que el valor de precio sea negativo 
@@ -436,13 +511,16 @@
             <param name="precio">
             Numero que representa el precio del producto
             </param>
+            <value>
+            Es el valor del producto
+            </value>
         </member>
         <member name="T:PracticaDocFX.Intermedio.LineaPedido">
             <summary>
-            sella una clase con sealed
+            Muestra el producto y cantidad
             </summary>
             <remarks>
-            sella la clase LineaPedido y permite que sea leida por cualquier persona haciendola publica
+            Sella la clase LineaPedido y permite que sea leida por cualquier persona haciendola publica
             </remarks>
         </member>
         <member name="P:PracticaDocFX.Intermedio.LineaPedido.Producto">
@@ -450,7 +528,7 @@
             Hace de la clase producto algo leible y se pueda tener su valor
             </summary>
             <remarks>
-            usa public y get; para leer y obtener valores
+            Usa public y get; para leer y obtener valores
             </remarks>
         </member>
         <member name="P:PracticaDocFX.Intermedio.LineaPedido.Cantidad">
@@ -458,20 +536,26 @@
             Hace que la propiedad de Cantidad solo admita numeros enteros
             </summary>
             <remarks>
-            usa int para nombrar la propiedad como numerica
+            Usa int para nombrar la propiedad como numerica
             </remarks>
         </member>
         <member name="M:PracticaDocFX.Intermedio.LineaPedido.#ctor(PracticaDocFX.Intermedio.Producto,System.Int32)">
             <summary>
-            evita que el producto sea nulo o menor a 1
+            Evita que el producto sea nulo o menor a 1
             </summary>
             <remarks>
-            como condicional en caso de que el producto sea menor a 1 no sera permitido, y se enviara un mensaje para que sea mayor a 1.
+            Como condicional en caso de que el producto sea menor a 1 no sera permitido, y se enviara un mensaje para que sea mayor a 1.
             </remarks>
+            <param name="producto">
+            Corresponde al tipo de producto
+            </param>
+            <param name="cantidad">
+            Es la cantidad del mismo producto, debe ser mayor o igual que 1
+            </param>
         </member>
         <member name="M:PracticaDocFX.Intermedio.LineaPedido.TotalLinea">
             <summary>
-            hace visible el total
+            Hace visible el total
             </summary>
             <remarks>
             Hace que el total pueda tener decimales  
@@ -479,10 +563,10 @@
         </member>
         <member name="T:PracticaDocFX.Intermedio.Pedido">
             <summary>
-            publica y sella la clase Pedido
+            Corresponde al Pedido del cliente en lista, estado, informacion y fecha de pago y creacion
             </summary>
             <remarks>
-            usa public y sealed para sellar la clase
+            Usa public y sealed para sellar la clase
             </remarks>
         </member>
         <member name="F:PracticaDocFX.Intermedio.Pedido._lineas">
@@ -490,7 +574,7 @@
             Hace que la LineaPedido sea unicamente de lectura
             </summary>
             <remarks>
-            usa ReadOnly y privatiza la propiedad
+            Usa ReadOnly y privatiza la propiedad
             </remarks>
         </member>
         <member name="P:PracticaDocFX.Intermedio.Pedido.Id">
@@ -498,7 +582,7 @@
             Hace que las propiedades Id y ClienteId tengan un valor obtenible
             </summary>
             <remarks>
-            usa propiedades de cadena y get; para la obtencion y visualizacion de valores
+            Usa propiedades de cadena y get; para la obtencion y visualizacion de valores
             </remarks>
         </member>
         <member name="P:PracticaDocFX.Intermedio.Pedido.Estado">
@@ -506,12 +590,12 @@
             Publica la propiedad EstadoPedido y hace que solo pueda ser definida dentro de la clase
             </summary>
             <remarks>
-            publica la propiedad y la hace definible bajo una regla
+            Publica la propiedad y la hace definible bajo una regla
             </remarks>
         </member>
         <member name="P:PracticaDocFX.Intermedio.Pedido.Lineas">
             <summary>
-            Hace que LineaPedido solo se pueda leer
+            
             </summary>
             <remarks>
             Hace que la propiedad no sea editable
@@ -540,32 +624,106 @@
             <remarks>
             Obliga a las variables estar llenas y correctas y elimina espacios en blanco 
             </remarks>
+            <param name="clienteId">
+            Es la identificacion del cliente en cadena
+            </param>
+            <param name="fechaCreacionUtc">
+            Corresponde a la fecha exacta de la creacion del pedido
+            </param>
+            <param name="id">
+            Es la identificacion del pedido en cadena
+            </param>
         </member>
         <member name="M:PracticaDocFX.Intermedio.Pedido.AgregarLinea(PracticaDocFX.Intermedio.LineaPedido)">
             <summary>
-            
+            Significa que solo se creara la factura una vez el pedido haya sido creado
             </summary>
             <remarks>
-            
+            Usa condicionales y decide que en caso de que el pedido no este creado no se enviara ninguna linea en las lista de facturacion
             </remarks>
             <param name="linea">
-            
+            Corresponde a la linea individual por producto en la factura
             </param>
+        </member>
+        <member name="M:PracticaDocFX.Intermedio.Pedido.Total">
+            <summary> 
+            Pasa el valor Total a numero entero con decimal y devuelve mensaje en caso de que no haya un pedido
+            </summary>
+            <remarks>
+            Convierte el total en un numero con decimales y devuelve un mensaje en caso de que el pedido no tenga objetos aun
+            </remarks>
+        </member>
+        <member name="M:PracticaDocFX.Intermedio.Pedido.MarcarPagado">
+            <summary>
+            Define el estado de cobro del Pedido
+            </summary>
+            <remarks>
+            Solo se puede cobrar el pedido una vez este creado, se guarda el estado de cobro del pedido y su fecha de creacion.
+            </remarks>
+        </member>
+        <member name="M:PracticaDocFX.Intermedio.Pedido.Cancelar">
+            <summary>
+            Evita que un pedido pagado sea cancelado.
+            </summary>
+            <remarks>
+            En caso de que un pedido actualmente pagado sea cancelado, no se podra cancelar
+            </remarks>
         </member>
         <member name="T:PracticaDocFX.Intermedio.RepositorioPedidosEnMemoria">
             <summary>
-            
+            Base de datos de los Pedidos
             </summary>
             <remarks>
-            
+            Guarda y recuerda los pedidos
             </remarks>
+        </member>
+        <member name="F:PracticaDocFX.Intermedio.RepositorioPedidosEnMemoria._almacen">
+            <summary>
+            Guarda los pedidos por nombre en cadena
+            </summary>
+            <remarks>
+            Diccionario que guarda los nombres de los pedidos en orden respecto a su cadena de nombre
+            </remarks>
+            <value>
+            Diccionario de cadenas y pedidos
+            </value>
+        </member>
+        <member name="M:PracticaDocFX.Intermedio.RepositorioPedidosEnMemoria.ObtenerPorId(System.String)">
+            <summary>
+            Pide el id del pedido
+            </summary>
+            <remarks>
+            Hace que la identificacion de los pedidos sea por medio del id unico de cada pedido
+            </remarks>
+            <param name="id">
+            Corresponde a la cadena de identificacion del pedido 
+            </param>
+        </member>
+        <member name="M:PracticaDocFX.Intermedio.RepositorioPedidosEnMemoria.Guardar(PracticaDocFX.Intermedio.Pedido)">
+            <summary>
+            Guarda los pedidos
+            </summary>
+            <remarks>
+            Guarda los pedidos y los envia al almacen (diccionario)
+            </remarks>
+            <param name="pedido">
+            Corresponde al pedido guardado
+            </param>
         </member>
         <member name="T:PracticaDocFX.Intermedio.DemoIntermedio">
             <summary>
-            
+            Clase que prueba el archivo intermedio
             </summary>
             <remarks>
-            
+            Prueba de validacion en el archivo intermedio
+            </remarks>
+        </member>
+        <member name="M:PracticaDocFX.Intermedio.DemoIntermedio.ProbarValidaciones">
+            <summary>
+            Prueba las validaciones
+            </summary>
+            <remarks>
+            Obtiene los productos ylos valida antes de enviarlos al diccionario
             </remarks>
         </member>
     </members>

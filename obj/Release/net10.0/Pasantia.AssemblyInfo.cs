@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pasantia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa2204ab291901ed915c31816de9e89e9fe7a5d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+662b7e87c4ec87047c693ed7789070e1d7b2c7cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pasantia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pasantia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
