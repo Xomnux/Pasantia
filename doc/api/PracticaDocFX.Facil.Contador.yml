@@ -24,12 +24,12 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Contador
     path: ../src/basico.cs
-    startLine: 74
+    startLine: 89
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: aumenta o disminuye el valor inicial de la variable
-  remarks: puede tomar y aumentar o disminuir un valor
+  summary: Aumenta o disminuye el valor inicial de la variable
+  remarks: Puede tomar y aumentar o disminuir un valor
   example: []
   syntax:
     content: public sealed class Contador
@@ -61,7 +61,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Valor
     path: ../src/basico.cs
-    startLine: 82
+    startLine: 97
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
@@ -92,18 +92,19 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: .ctor
     path: ../src/basico.cs
-    startLine: 90
+    startLine: 108
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: es para inicializar el constructor
-  remarks: hace que el constructor arrance desde 0
+  summary: Es para inicializar el constructor
+  remarks: Hace que el constructor arrance desde 0
   example: []
   syntax:
     content: public Contador(int valorInicial = 0)
     parameters:
     - id: valorInicial
       type: System.Int32
+      description: Corresponde al valor inicial en el contador (0)
     content.vb: Public Sub New(valorInicial As Integer = 0)
   overload: PracticaDocFX.Facil.Contador.#ctor*
   nameWithType.vb: Contador.New(Integer)
@@ -127,11 +128,11 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Incrementar
     path: ../src/basico.cs
-    startLine: 101
+    startLine: 119
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: establece el atributo de la variables Incrementar
+  summary: Establece el atributo de la variables Incrementar
   remarks: Hace que la funcion de la variable sea la de sumar al valor
   example: []
   syntax:
@@ -158,7 +159,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Decrementar
     path: ../src/basico.cs
-    startLine: 113
+    startLine: 131
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
@@ -189,7 +190,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Reiniciar
     path: ../src/basico.cs
-    startLine: 125
+    startLine: 146
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
@@ -201,6 +202,7 @@ items:
     parameters:
     - id: valorInicial
       type: System.Int32
+      description: Corresponde al valor inicial (0) en caso de que se reinicie el contador
     content.vb: Public Sub Reiniciar(valorInicial As Integer = 0)
   overload: PracticaDocFX.Facil.Contador.Reiniciar*
   nameWithType.vb: Contador.Reiniciar(Integer)

@@ -22,11 +22,11 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: CompositeValidador
     path: ../src/intermedio.cs
-    startLine: 265
+    startLine: 274
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
-  summary: Sella la clase CompositeValidador y la hace generica
+  summary: Enlista y valida los productos por medio de enumeracion logica
   remarks: Hace que la clase no sea heredable y hace que sea generica usando el caracter T
   example: []
   syntax:
@@ -66,7 +66,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: .ctor
     path: ../src/intermedio.cs
-    startLine: 284
+    startLine: 293
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: .ctor
     path: ../src/intermedio.cs
-    startLine: 298
+    startLine: 310
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -138,7 +138,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Validar
     path: ../src/intermedio.cs
-    startLine: 312
+    startLine: 324
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio

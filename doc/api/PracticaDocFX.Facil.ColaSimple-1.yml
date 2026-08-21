@@ -23,11 +23,11 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: ColaSimple
     path: ../src/basico.cs
-    startLine: 189
+    startLine: 225
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: enfila y desenfila los valores
+  summary: Enfila y desenfila los valores
   remarks: Pone en cola (fila) las variables y tambien las desencola, en caso de que no haya un valor, se envia un mensaje
   example: []
   syntax:
@@ -65,12 +65,12 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Cantidad
     path: ../src/basico.cs
-    startLine: 205
+    startLine: 244
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: envia la cantidad del numero a la cola
-  remarks: usa la variable de cantidad para enviarla a la cola de valores
+  summary: Envia la cantidad del numero a la cola
+  remarks: Usa la variable de cantidad para enviarla a la cola de valores
   example: []
   syntax:
     content: public int Cantidad { get; }
@@ -99,18 +99,19 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Encolar
     path: ../src/basico.cs
-    startLine: 213
+    startLine: 255
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: encola las variables de numero entero
-  remarks: usa el comando de encolar para manipular los numeros enteros
+  summary: Encola las variables de numero entero
+  remarks: Usa el comando de encolar para manipular los numeros enteros
   example: []
   syntax:
     content: public void Encolar(T elemento)
     parameters:
     - id: elemento
       type: '{T}'
+      description: Corresponde al elemento que va en la cola
     content.vb: Public Sub Encolar(elemento As T)
   overload: PracticaDocFX.Facil.ColaSimple`1.Encolar*
   nameWithType.vb: ColaSimple(Of T).Encolar(T)
@@ -133,12 +134,12 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Desencolar
     path: ../src/basico.cs
-    startLine: 223
+    startLine: 265
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: desencola los numeros enteros
-  remarks: desencola con desencolar
+  summary: Desencola los numeros enteros
+  remarks: Desencola con desencolar
   example: []
   syntax:
     content: public T Desencolar()
@@ -166,12 +167,12 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: VerPrimero
     path: ../src/basico.cs
-    startLine: 236
+    startLine: 278
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
   summary: Envia un mensaje si la cola esta vacia y si tiene regresa el primero
-  remarks: usa comandos de excepcion y retorno
+  remarks: Usa comandos de excepcion y retorno
   example: []
   syntax:
     content: public T VerPrimero()

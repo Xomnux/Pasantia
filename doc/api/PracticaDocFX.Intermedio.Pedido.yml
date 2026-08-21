@@ -30,11 +30,11 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Pedido
     path: ../src/intermedio.cs
-    startLine: 427
+    startLine: 448
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
-  summary: Publica y sella la clase Pedido
+  summary: Corresponde al Pedido del cliente en lista, estado, informacion y fecha de pago y creacion
   remarks: Usa public y sealed para sellar la clase
   example: []
   syntax:
@@ -67,7 +67,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Id
     path: ../src/intermedio.cs
-    startLine: 443
+    startLine: 464
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -99,7 +99,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: ClienteId
     path: ../src/intermedio.cs
-    startLine: 444
+    startLine: 465
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -128,7 +128,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Estado
     path: ../src/intermedio.cs
-    startLine: 452
+    startLine: 473
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -160,11 +160,11 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Lineas
     path: ../src/intermedio.cs
-    startLine: 460
+    startLine: 481
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
-  summary: Hace que LineaPedido solo se pueda leer
+  summary: ''
   remarks: Hace que la propiedad no sea editable
   example: []
   syntax:
@@ -192,7 +192,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: FechaCreacionUtc
     path: ../src/intermedio.cs
-    startLine: 468
+    startLine: 489
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -224,7 +224,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: FechaPagoUtc
     path: ../src/intermedio.cs
-    startLine: 475
+    startLine: 496
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -256,7 +256,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: .ctor
     path: ../src/intermedio.cs
-    startLine: 483
+    startLine: 513
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -268,10 +268,13 @@ items:
     parameters:
     - id: id
       type: System.String
+      description: Es la identificacion del pedido en cadena
     - id: clienteId
       type: System.String
+      description: Es la identificacion del cliente en cadena
     - id: fechaCreacionUtc
       type: System.DateTime
+      description: Corresponde a la fecha exacta de la creacion del pedido
     content.vb: Public Sub New(id As String, clienteId As String, fechaCreacionUtc As Date)
   overload: PracticaDocFX.Intermedio.Pedido.#ctor*
   nameWithType.vb: Pedido.New(String, String, Date)
@@ -295,19 +298,19 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: AgregarLinea
     path: ../src/intermedio.cs
-    startLine: 504
+    startLine: 534
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
-  summary: ''
-  remarks: ''
+  summary: Significa que solo se creara la factura una vez el pedido haya sido creado
+  remarks: Usa condicionales y decide que en caso de que el pedido no este creado no se enviara ninguna linea en las lista de facturacion
   example: []
   syntax:
     content: public void AgregarLinea(LineaPedido linea)
     parameters:
     - id: linea
       type: PracticaDocFX.Intermedio.LineaPedido
-      description: ''
+      description: Corresponde a la linea individual por producto en la factura
     content.vb: Public Sub AgregarLinea(linea As LineaPedido)
   overload: PracticaDocFX.Intermedio.Pedido.AgregarLinea*
 - uid: PracticaDocFX.Intermedio.Pedido.Total
@@ -328,10 +331,13 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Total
     path: ../src/intermedio.cs
-    startLine: 513
+    startLine: 549
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
+  summary: Pasa el valor Total a numero entero con decimal y devuelve mensaje en caso de que no haya un pedido
+  remarks: Convierte el total en un numero con decimales y devuelve un mensaje en caso de que el pedido no tenga objetos aun
+  example: []
   syntax:
     content: public decimal Total()
     return:
@@ -356,10 +362,13 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: MarcarPagado
     path: ../src/intermedio.cs
-    startLine: 521
+    startLine: 562
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
+  summary: Define el estado de cobro del Pedido
+  remarks: Solo se puede cobrar el pedido una vez este creado, se guarda el estado de cobro del pedido y su fecha de creacion.
+  example: []
   syntax:
     content: public void MarcarPagado()
     content.vb: Public Sub MarcarPagado()
@@ -382,10 +391,13 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Cancelar
     path: ../src/intermedio.cs
-    startLine: 530
+    startLine: 576
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
+  summary: Evita que un pedido pagado sea cancelado.
+  remarks: En caso de que un pedido actualmente pagado sea cancelado, no se podra cancelar
+  example: []
   syntax:
     content: public void Cancelar()
     content.vb: Public Sub Cancelar()

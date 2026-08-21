@@ -21,12 +21,12 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: RepositorioPedidosEnMemoria
     path: ../src/intermedio.cs
-    startLine: 546
+    startLine: 592
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
-  summary: ''
-  remarks: ''
+  summary: Base de datos de los Pedidos
+  remarks: Guarda y recuerda los pedidos
   example: []
   syntax:
     content: public sealed class RepositorioPedidosEnMemoria
@@ -58,15 +58,19 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: ObtenerPorId
     path: ../src/intermedio.cs
-    startLine: 550
+    startLine: 614
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
+  summary: Pide el id del pedido
+  remarks: Hace que la identificacion de los pedidos sea por medio del id unico de cada pedido
+  example: []
   syntax:
     content: public Pedido? ObtenerPorId(string id)
     parameters:
     - id: id
       type: System.String
+      description: Corresponde a la cadena de identificacion del pedido
     return:
       type: PracticaDocFX.Intermedio.Pedido
     content.vb: Public Function ObtenerPorId(id As String) As Pedido
@@ -92,15 +96,19 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Guardar
     path: ../src/intermedio.cs
-    startLine: 559
+    startLine: 631
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
+  summary: Guarda los pedidos
+  remarks: Guarda los pedidos y los envia al almacen (diccionario)
+  example: []
   syntax:
     content: public void Guardar(Pedido pedido)
     parameters:
     - id: pedido
       type: PracticaDocFX.Intermedio.Pedido
+      description: Corresponde al pedido guardado
     content.vb: Public Sub Guardar(pedido As Pedido)
   overload: PracticaDocFX.Intermedio.RepositorioPedidosEnMemoria.Guardar*
 references:

@@ -388,7 +388,7 @@ namespace PracticaDocFX.Intermedio
         }
     }
     /// <summary>
-    /// 
+    /// Muestra el producto y cantidad
     /// </summary>
     /// <remarks>
     /// Sella la clase LineaPedido y permite que sea leida por cualquier persona haciendola publica

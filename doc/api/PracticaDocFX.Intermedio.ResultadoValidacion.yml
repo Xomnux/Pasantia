@@ -23,12 +23,12 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: ResultadoValidacion
     path: ../src/intermedio.cs
-    startLine: 71
+    startLine: 74
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
   summary: Brinda el resultado de la validacion
-  remarks: ''
+  remarks: No es heredable
   example: []
   syntax:
     content: public sealed class ResultadoValidacion
@@ -60,7 +60,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Errores
     path: ../src/intermedio.cs
-    startLine: 79
+    startLine: 82
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -92,11 +92,11 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Valido
     path: ../src/intermedio.cs
-    startLine: 86
+    startLine: 89
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
-  summary: Revisa si hay errores
+  summary: Revisa si hay errores de Validacion
   remarks: Con la variable booleana Valido se determina si hay errores por medio del true or false
   example: []
   syntax:
@@ -124,7 +124,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Correcto
     path: ../src/intermedio.cs
-    startLine: 106
+    startLine: 112
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -155,7 +155,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: ConErrores
     path: ../src/intermedio.cs
-    startLine: 116
+    startLine: 122
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio

@@ -23,7 +23,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Producto
     path: ../src/intermedio.cs
-    startLine: 332
+    startLine: 344
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -60,7 +60,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Codigo
     path: ../src/intermedio.cs
-    startLine: 340
+    startLine: 352
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -92,7 +92,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Nombre
     path: ../src/intermedio.cs
-    startLine: 341
+    startLine: 353
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -121,7 +121,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Precio
     path: ../src/intermedio.cs
-    startLine: 342
+    startLine: 354
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -150,7 +150,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: .ctor
     path: ../src/intermedio.cs
-    startLine: 360
+    startLine: 375
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio

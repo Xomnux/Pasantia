@@ -150,7 +150,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: .ctor
     path: ../src/intermedio.cs
-    startLine: 53
+    startLine: 56
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio

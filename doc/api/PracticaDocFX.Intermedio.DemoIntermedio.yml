@@ -20,12 +20,12 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: DemoIntermedio
     path: ../src/intermedio.cs
-    startLine: 571
+    startLine: 643
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
-  summary: ''
-  remarks: ''
+  summary: Clase que prueba el archivo intermedio
+  remarks: Prueba de validacion en el archivo intermedio
   example: []
   syntax:
     content: public static class DemoIntermedio
@@ -58,10 +58,13 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: ProbarValidaciones
     path: ../src/intermedio.cs
-    startLine: 573
+    startLine: 651
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
+  summary: Prueba las validaciones
+  remarks: Obtiene los productos ylos valida antes de enviarlos al diccionario
+  example: []
   syntax:
     content: public static ResultadoValidacion ProbarValidaciones()
     return:

@@ -16,27 +16,42 @@ namespace PracticaDocFX.Facil
         Fuerte = 2
     }
     ///<summary>
-    /// establece que en la etiqueta del texto no puede ir espacio en blanco
+    /// Establece que en la etiqueta del texto no puede ir espacio en blanco
     ///</summary>
     ///<remarks>
     ///Cada texto no puede ser de valor nulo
     ///</remarks>
     public sealed class EtiquetaTexto
     {
-    ///<summary>
-    /// Obtiene el texto y el prefijo
-    ///</summary>
-    ///<remarks>
-    /// toma la disposicion del texto y el prefijo
-    ///</remarks>
+        ///<summary>
+        /// Obtiene el texto
+        ///</summary>
+        ///<remarks>
+        /// Toma la disposicion del texto
+        ///</remarks>
         public string Texto { get; }
+        ///<summary>
+        /// Obtiene el prefijo
+        ///</summary>
+        ///<remarks>
+        /// Toma la disposicion del prefijo
+        ///</remarks>
         public string Prefijo { get; }
-    ///<summary>
-    /// Pide el texto y el prefijo
-    ///</summary>
-    ///<remarks>
-    /// pide y define el lugar del texto y prefijo
-    ///</remarks>
+        ///<summary>
+        /// Pide el texto y el prefijo
+        ///</summary>
+        ///<remarks>
+        /// Pide y define el lugar del texto y prefijo
+        ///</remarks>
+        /// <param name="prefijo">
+        /// Corresponde al prefijo de la etiqueta
+        /// </param>
+        /// <param name="texto">
+        /// Corresponde al texto de la etiqueta
+        /// </param>
+        /// <value>
+        /// Representa la etiqueta del texto
+        /// </value>
         public EtiquetaTexto(string texto, string prefijo = "")
         {
             if (string.IsNullOrWhiteSpace(texto))
@@ -45,32 +60,32 @@ namespace PracticaDocFX.Facil
             Prefijo = prefijo ?? "";
             Texto = texto.Trim();
         }
-    ///<summary>
-    /// obtiene las etiquetas
-    ///</summary>
-    ///<remarks>
-    /// Obtiene las etiquetas devolviendo prefijo y texto
-    ///</remarks>
+        ///<summary>
+        /// Obtiene las etiquetas
+        ///</summary>
+        ///<remarks>
+        /// Obtiene las etiquetas devolviendo prefijo y texto
+        ///</remarks>
         public string ObtenerEtiqueta()
         {
             return $"{Prefijo}{Texto}";
         }
-    /// <summary>
-    /// sobreescribe
-    /// </summary>
-    /// <remarks>
-    /// sobreescribe el texto de cadena
-    /// </remarks>
+        /// <summary>
+        /// Sobreescribe
+        /// </summary>
+        /// <remarks>
+        /// Sobreescribe el texto de cadena
+        /// </remarks>
         public override string ToString()
         {
             return ObtenerEtiqueta();
         }
     }
     ///<summary>
-    /// aumenta o disminuye el valor inicial de la variable
+    /// Aumenta o disminuye el valor inicial de la variable
     ///</summary>
     ///<remarks>
-    /// puede tomar y aumentar o disminuir un valor 
+    /// Puede tomar y aumentar o disminuir un valor 
     ///</remarks>
     public sealed class Contador
     {
@@ -78,23 +93,26 @@ namespace PracticaDocFX.Facil
         /// Usa atributos como Public y Private
         /// </summary>
         /// <remark>
-        /// cambia los atributos de las variables
+        /// Cambia los atributos de las variables
         /// </remark>
         public int Valor { get; private set; }
 
         /// <summary>
-        /// es para inicializar el constructor
+        /// Es para inicializar el constructor
         /// </summary>
         ///<remarks>
-        /// hace que el constructor arrance desde 0
+        /// Hace que el constructor arrance desde 0
         /// </remarks>
+        /// <param name="valorInicial">
+        /// Corresponde al valor inicial en el contador (0)
+        /// </param>
         public Contador(int valorInicial = 0)
         {
             Valor = valorInicial;
         }
 
         /// <summary>
-        /// establece el atributo de la variables Incrementar
+        /// Establece el atributo de la variables Incrementar
         /// </summary>
         /// <remarks>
         /// Hace que la funcion de la variable sea la de sumar al valor
@@ -123,6 +141,9 @@ namespace PracticaDocFX.Facil
         /// <remarks>
         /// Usa una variable de valor 0 para asi convertir a la variable de Valor en un 0
         /// </remarks>
+        /// <param name="valorInicial">
+        /// Corresponde al valor inicial (0) en caso de que se reinicie el contador
+        /// </param>
         public void Reiniciar(int valorInicial = 0)
         {
             Valor = valorInicial;
@@ -132,26 +153,38 @@ namespace PracticaDocFX.Facil
     ///Devuelve valores no deseados
     ///</summary>
     ///<remarks>
-    ///devuelve el valor en caso de que no sea par y Si el valor no es suficiente tira una variable nueva y envia una advertencia de cambio
+    ///Devuelve el valor en caso de que no sea par y Si el valor no es suficiente tira una variable nueva y envia una advertencia de cambio
     ///</remarks>
     public static class UtilidadesBasicas
     {
         /// <summary>
-        /// devuelve el numero a ser par
+        /// Devuelve el numero a ser par
         /// </summary>
         /// <remarks>
-        /// bota el residuo de la division
+        /// Bota el residuo de la division
         /// </remarks>
+        /// <param name="numero">
+        /// Equivale al numero residuo de la division
+        /// </param>
         public static bool EsPar(int numero)
         {
             return numero % 2 == 0;
         }
         /// <summary>
-        /// se asegura de que el valor maximo sea mayor al valor minimo
+        /// Se asegura de que el valor maximo sea mayor al valor minimo
         /// </summary>
         /// <remarks>
-        /// usa condicionales y en caso de que no se cumplan enviara un mensaje de advertencia
+        /// Usa condicionales y en caso de que no se cumplan enviara un mensaje de advertencia
         /// </remarks>
+        /// <param name="maximo">
+        /// Equivale al rango maximo
+        /// </param>
+        /// <param name="minimo">
+        /// Equivale al rango minimo
+        /// </param>
+        /// <param name="valor">
+        /// Equivale al valor del numero 
+        /// </param>
         public static int Limitar(int valor, int minimo, int maximo)
         {
             if (minimo > maximo)
@@ -161,12 +194,15 @@ namespace PracticaDocFX.Facil
             if (valor > maximo) return maximo;
             return valor;
         }
-         /// <summary>
+        /// <summary>
         /// Realiza una suma de un arreglo de valores
         /// </summary>
         /// <remarks>
         /// Usa la funcion de calculo de suma para sumar enteros
         /// </remarks>
+        /// <param name="valores">
+        /// Equivale a un conjunto de enteros
+        /// </param>
         public static int Suma(params int[] valores)
         {
             if (valores is null) throw new ArgumentNullException(nameof(valores));
@@ -182,7 +218,7 @@ namespace PracticaDocFX.Facil
         }
     }
     ///<summary>
-    ///enfila y desenfila los valores
+    ///Enfila y desenfila los valores
     ///</summary>
     ///<remarks>
     ///Pone en cola (fila) las variables y tambien las desencola, en caso de que no haya un valor, se envia un mensaje
@@ -193,33 +229,39 @@ namespace PracticaDocFX.Facil
         /// Crea una cola de numeros no sobreescribibles
         /// </summary>
         /// <remarks>
-        /// usa comando de configuracion de colas
+        /// Usa comando de configuracion de colas
         /// </remarks>
+        /// <value>
+        /// Representa la fila de cantidades de numeros
+        /// </value>
         private readonly Queue<T> _cola = new Queue<T>();
 
         /// <summary>
-        /// envia la cantidad del numero a la cola
+        /// Envia la cantidad del numero a la cola
         /// </summary>
         /// <remarks>
-        /// usa la variable de cantidad para enviarla a la cola de valores
+        /// Usa la variable de cantidad para enviarla a la cola de valores
         /// </remarks>
         public int Cantidad => _cola.Count;
 
         /// <summary>
-        /// encola las variables de numero entero
+        /// Encola las variables de numero entero
         /// </summary>
         /// <remarks>
-        /// usa el comando de encolar para manipular los numeros enteros
+        /// Usa el comando de encolar para manipular los numeros enteros
         /// </remarks>
+        /// <param name="elemento">
+        /// Corresponde al elemento que va en la cola
+        /// </param>
         public void Encolar(T elemento)
         {
             _cola.Enqueue(elemento);
         }
         ///<summary>
-        /// desencola los numeros enteros
+        /// Desencola los numeros enteros
         /// </summary>
         /// <remarks>
-        /// desencola con desencolar 
+        /// Desencola con desencolar 
         /// </remarks>
         public T Desencolar()
         {
@@ -232,7 +274,7 @@ namespace PracticaDocFX.Facil
         /// Envia un mensaje si la cola esta vacia y si tiene regresa el primero
         /// </summary>
         /// <remarks>
-        /// usa comandos de excepcion y retorno
+        /// Usa comandos de excepcion y retorno
         /// </remarks>
         public T VerPrimero()
         {

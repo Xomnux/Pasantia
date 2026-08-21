@@ -22,12 +22,12 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: UtilidadesBasicas
     path: ../src/basico.cs
-    startLine: 136
+    startLine: 157
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
   summary: Devuelve valores no deseados
-  remarks: devuelve el valor en caso de que no sea par y Si el valor no es suficiente tira una variable nueva y envia una advertencia de cambio
+  remarks: Devuelve el valor en caso de que no sea par y Si el valor no es suficiente tira una variable nueva y envia una advertencia de cambio
   example: []
   syntax:
     content: public static class UtilidadesBasicas
@@ -60,18 +60,19 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: EsPar
     path: ../src/basico.cs
-    startLine: 144
+    startLine: 168
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: devuelve el numero a ser par
-  remarks: bota el residuo de la division
+  summary: Devuelve el numero a ser par
+  remarks: Bota el residuo de la division
   example: []
   syntax:
     content: public static bool EsPar(int numero)
     parameters:
     - id: numero
       type: System.Int32
+      description: Equivale al numero residuo de la division
     return:
       type: System.Boolean
     content.vb: Public Shared Function EsPar(numero As Integer) As Boolean
@@ -97,22 +98,25 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Limitar
     path: ../src/basico.cs
-    startLine: 154
+    startLine: 187
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: se asegura de que el valor maximo sea mayor al valor minimo
-  remarks: usa condicionales y en caso de que no se cumplan enviara un mensaje de advertencia
+  summary: Se asegura de que el valor maximo sea mayor al valor minimo
+  remarks: Usa condicionales y en caso de que no se cumplan enviara un mensaje de advertencia
   example: []
   syntax:
     content: public static int Limitar(int valor, int minimo, int maximo)
     parameters:
     - id: valor
       type: System.Int32
+      description: Equivale al valor del numero
     - id: minimo
       type: System.Int32
+      description: Equivale al rango minimo
     - id: maximo
       type: System.Int32
+      description: Equivale al rango maximo
     return:
       type: System.Int32
     content.vb: Public Shared Function Limitar(valor As Integer, minimo As Integer, maximo As Integer) As Integer
@@ -138,7 +142,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Suma
     path: ../src/basico.cs
-    startLine: 169
+    startLine: 205
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
@@ -150,6 +154,7 @@ items:
     parameters:
     - id: valores
       type: System.Int32[]
+      description: Equivale a un conjunto de enteros
     return:
       type: System.Int32
     content.vb: Public Shared Function Suma(ParamArray valores As Integer()) As Integer

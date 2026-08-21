@@ -21,7 +21,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: ValidadorNoNulo
     path: ../src/intermedio.cs
-    startLine: 146
+    startLine: 152
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -65,7 +65,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: .ctor
     path: ../src/intermedio.cs
-    startLine: 165
+    startLine: 174
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -101,7 +101,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Validar
     path: ../src/intermedio.cs
-    startLine: 181
+    startLine: 190
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio

@@ -23,11 +23,11 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: LineaPedido
     path: ../src/intermedio.cs
-    startLine: 380
+    startLine: 395
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
-  summary: Sella una clase con sealed
+  summary: Muestra el producto y cantidad
   remarks: Sella la clase LineaPedido y permite que sea leida por cualquier persona haciendola publica
   example: []
   syntax:
@@ -60,7 +60,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Producto
     path: ../src/intermedio.cs
-    startLine: 388
+    startLine: 403
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -92,7 +92,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Cantidad
     path: ../src/intermedio.cs
-    startLine: 396
+    startLine: 411
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -124,7 +124,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: .ctor
     path: ../src/intermedio.cs
-    startLine: 404
+    startLine: 425
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -136,8 +136,10 @@ items:
     parameters:
     - id: producto
       type: PracticaDocFX.Intermedio.Producto
+      description: Corresponde al tipo de producto
     - id: cantidad
       type: System.Int32
+      description: Es la cantidad del mismo producto, debe ser mayor o igual que 1
     content.vb: Public Sub New(producto As Producto, cantidad As Integer)
   overload: PracticaDocFX.Intermedio.LineaPedido.#ctor*
   nameWithType.vb: LineaPedido.New(Producto, Integer)
@@ -161,7 +163,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: TotalLinea
     path: ../src/intermedio.cs
-    startLine: 416
+    startLine: 437
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio

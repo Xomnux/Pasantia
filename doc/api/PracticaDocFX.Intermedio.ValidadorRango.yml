@@ -23,7 +23,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: ValidadorRango
     path: ../src/intermedio.cs
-    startLine: 200
+    startLine: 209
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -60,7 +60,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Minimo
     path: ../src/intermedio.cs
-    startLine: 208
+    startLine: 217
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -92,7 +92,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Maximo
     path: ../src/intermedio.cs
-    startLine: 209
+    startLine: 218
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -121,7 +121,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: .ctor
     path: ../src/intermedio.cs
-    startLine: 223
+    startLine: 232
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio
@@ -160,7 +160,7 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Validar
     path: ../src/intermedio.cs
-    startLine: 243
+    startLine: 252
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Intermedio

@@ -28,7 +28,7 @@ items:
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: establece que en la etiqueta del texto no puede ir espacio en blanco
+  summary: Establece que en la etiqueta del texto no puede ir espacio en blanco
   remarks: Cada texto no puede ser de valor nulo
   example: []
   syntax:
@@ -64,8 +64,8 @@ items:
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: Obtiene el texto y el prefijo
-  remarks: toma la disposicion del texto y el prefijo
+  summary: Obtiene el texto
+  remarks: Toma la disposicion del texto
   example: []
   syntax:
     content: public string Texto { get; }
@@ -92,10 +92,13 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: Prefijo
     path: ../src/basico.cs
-    startLine: 32
+    startLine: 38
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
+  summary: Obtiene el prefijo
+  remarks: Toma la disposicion del prefijo
+  example: []
   syntax:
     content: public string Prefijo { get; }
     parameters: []
@@ -121,20 +124,22 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: .ctor
     path: ../src/basico.cs
-    startLine: 39
+    startLine: 54
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
   summary: Pide el texto y el prefijo
-  remarks: pide y define el lugar del texto y prefijo
+  remarks: Pide y define el lugar del texto y prefijo
   example: []
   syntax:
     content: public EtiquetaTexto(string texto, string prefijo = "")
     parameters:
     - id: texto
       type: System.String
+      description: Corresponde al texto de la etiqueta
     - id: prefijo
       type: System.String
+      description: Corresponde al prefijo de la etiqueta
     content.vb: Public Sub New(texto As String, prefijo As String = "")
   overload: PracticaDocFX.Facil.EtiquetaTexto.#ctor*
   nameWithType.vb: EtiquetaTexto.New(String, String)
@@ -158,11 +163,11 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: ObtenerEtiqueta
     path: ../src/basico.cs
-    startLine: 53
+    startLine: 68
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: obtiene las etiquetas
+  summary: Obtiene las etiquetas
   remarks: Obtiene las etiquetas devolviendo prefijo y texto
   example: []
   syntax:
@@ -189,12 +194,12 @@ items:
       repo: https://github.com/Xomnux/Pasantia.git
     id: ToString
     path: ../src/basico.cs
-    startLine: 63
+    startLine: 78
   assemblies:
   - Pasantia
   namespace: PracticaDocFX.Facil
-  summary: sobreescribe
-  remarks: sobreescribe el texto de cadena
+  summary: Sobreescribe
+  remarks: Sobreescribe el texto de cadena
   example: []
   syntax:
     content: public override string ToString()
